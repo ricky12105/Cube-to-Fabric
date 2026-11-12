@@ -10,6 +10,8 @@ deployable application or an implemented migration**.
 
 ## Start here
 
+Browse the [published GitHub Pages site](https://ricky12105.github.io/Cube-to-Fabric/).
+
 | Deliverable | What it contains |
 |---|---|
 | [Diagram gallery](architecture-options/diagrams.html) | Browser-friendly architecture diagrams in presentation order, including semantic-model insets and the decision path. |
@@ -64,18 +66,15 @@ The [site entry point](index.html) redirects to the diagram gallery. The
 [`.nojekyll` marker](.nojekyll) allows GitHub Pages to serve the files as a
 static site without Jekyll processing.
 
-**Publication is pending.** The repository remains private, and GitHub rejected
-Pages for this repository under the current plan. Publishing requires either
-an eligible plan for private-repository Pages or explicit approval to make the
-repository public. No repository visibility change has been made.
-
-Once eligible, configure **Settings > Pages > Deploy from a branch**, selecting
-**main** and **/ (root)**. Subsequent pushes to `main` publish site updates.
-The expected address after a successful deployment is
+**The repository and site are public.** The published address is
 <https://ricky12105.github.io/Cube-to-Fabric/>.
 
-Do not treat a private source repository as a guarantee of private website
-access; confirm the Pages site's access settings before publishing.
+GitHub Pages is configured under **Settings > Pages > Deploy from a branch**,
+using **main** and **/ (root)**. Subsequent pushes to `main` publish site updates;
+allow the Pages build and deployment to finish before checking changes.
+
+All committed files are publicly accessible. Do not add customer data,
+credentials or confidential working notes.
 
 ## Evidence, assumptions and scope
 
