@@ -1,0 +1,35 @@
+{
+  "retrievedDate": "2026-11-12",
+  "source": "Azure MCP pricing_get, public Azure Retail Prices API",
+  "currency": "USD",
+  "armSkuName": "Fabric_Capacity_CU_Hour",
+  "basis": "Fabric is priced per CU. F64/F128/F256 multiply the unit records by 64/128/256. Reservation retailPrice is the whole term per CU, not an hourly charge despite unitOfMeasure.",
+  "monthlyHoursAssumption": 730,
+  "regions": [
+    {
+      "armRegionName": "eastus",
+      "displayName": "East US",
+      "meterId": "0867799b-2b02-5540-87b4-35b5ce92bdbf",
+      "records": [
+        {"priceType": "Consumption", "skuName": "Dataflows Standard Compute Capacity Usage", "productName": "Fabric Capacity", "meterName": "Dataflows Standard Compute Capacity Usage CU", "retailPrice": 0.18, "unitOfMeasure": "1 Hour", "effectiveStartDate": "2023-11-01T00:00:00+00:00"},
+        {"priceType": "Reservation", "skuName": "Fabric Capacity", "productName": "Fabric Capacity Reservation", "meterName": "Fabric Capacity CU", "reservationTerm": "1 Year", "retailPrice": 938, "unitOfMeasure": "1 Hour", "effectiveStartDate": "2023-11-01T00:00:00+00:00"},
+        {"priceType": "Reservation", "skuName": "Fabric Capacity", "productName": "Fabric Capacity Reservation", "meterName": "Fabric Capacity CU", "reservationTerm": "3 Years", "retailPrice": 2814, "unitOfMeasure": "1 Hour", "effectiveStartDate": "2026-04-01T00:00:00+00:00"}
+      ]
+    },
+    {
+      "armRegionName": "southcentralus",
+      "displayName": "South Central US",
+      "meterId": "3e2b8b36-4976-5c92-b127-e06be667c3aa",
+      "records": [
+        {"priceType": "Consumption", "skuName": "Dataflows Standard Compute Capacity Usage", "productName": "Fabric Capacity", "meterName": "Dataflows Standard Compute Capacity Usage CU", "retailPrice": 0.18, "unitOfMeasure": "1 Hour", "effectiveStartDate": "2023-11-01T00:00:00+00:00"},
+        {"priceType": "Reservation", "skuName": "Fabric Capacity", "productName": "Fabric Capacity Reservation", "meterName": "Fabric Capacity CU", "reservationTerm": "1 Year", "retailPrice": 938, "unitOfMeasure": "1 Hour", "effectiveStartDate": "2023-11-01T00:00:00+00:00"},
+        {"priceType": "Reservation", "skuName": "Fabric Capacity", "productName": "Fabric Capacity Reservation", "meterName": "Fabric Capacity CU", "reservationTerm": "3 Years", "retailPrice": 2814, "unitOfMeasure": "1 Hour", "effectiveStartDate": "2026-04-01T00:00:00+00:00"}
+      ]
+    }
+  ],
+  "derivedPricesEachRegion": [
+    {"sku": "F64", "cus": 64, "paygPerHour": 11.52, "payg730Hours": 8409.60, "reservation1YearTotal": 60032, "reservation1YearMonthlyEquivalent": 5002.666666666667, "reservation3YearTotal": 180096, "reservation3YearMonthlyEquivalent": 5002.666666666667},
+    {"sku": "F128", "cus": 128, "paygPerHour": 23.04, "payg730Hours": 16819.20, "reservation1YearTotal": 120064, "reservation1YearMonthlyEquivalent": 10005.333333333334, "reservation3YearTotal": 360192, "reservation3YearMonthlyEquivalent": 10005.333333333334},
+    {"sku": "F256", "cus": 256, "paygPerHour": 46.08, "payg730Hours": 33638.40, "reservation1YearTotal": 240128, "reservation1YearMonthlyEquivalent": 20010.666666666668, "reservation3YearTotal": 720384, "reservation3YearMonthlyEquivalent": 20010.666666666668}
+  ]
+}

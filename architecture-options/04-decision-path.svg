@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="910" viewBox="0 0 1840 910" role="img" aria-label="Decision path - change the model first; scale is a gated fallback">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#495057"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="35" y="48" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
+<tspan x="35" dy="0">Decision path - change the model first; scale is a gated fallback</tspan>
+</text>
+<text x="35" y="94" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="35" dy="0">Objective: all 15 years fast at summary grain; exceptional policy-level access on demand; no automatic history truncation.</tspan>
+</text>
+<text x="40" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">SOURCE</tspan>
+</text>
+<text x="390" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="390" dy="0">LANDING / PUBLICATION</tspan>
+</text>
+<text x="740" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="740" dy="0">STORAGE</tspan>
+</text>
+<text x="1090" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1090" dy="0">SEMANTIC MODEL</tspan>
+</text>
+<text x="1480" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1480" dy="0">CONSUMERS</tspan>
+</text>
+<rect x="45" y="205" width="420" height="160" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="255" y="256.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="255" dy="0">Can the model change meet</tspan>
+<tspan x="255" dy="23.400000000000002">the requirement on F64?</tspan>
+<tspan x="255" dy="23.400000000000002">Confirm grain, Excel usage,</tspan>
+<tspan x="255" dy="23.400000000000002">15y retention, and SLAs</tspan>
+</text>
+<rect x="560" y="205" width="440" height="160" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="780" y="256.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="780" dy="0">1. Direct Lake summary + DQ detail</tspan>
+<tspan x="780" dy="23.400000000000002">Lead: 1a Snowflake detail</tspan>
+<tspan x="780" dy="23.400000000000002">1b only if a second copy is justified</tspan>
+<tspan x="780" dy="23.400000000000002">F64; explicit policy measures</tspan>
+</text>
+<rect x="1100" y="205" width="320" height="160" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="1260" y="256.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1260" dy="0">PASS -&gt; stay on F64</tspan>
+<tspan x="1260" dy="23.400000000000002">Monthly example: 36M</tspan>
+<tspan x="1260" dy="23.400000000000002">1.464B row headroom</tspan>
+<tspan x="1260" dy="23.400000000000002">Measure memory + CU load</tspan>
+</text>
+<path d="M470,285 L555,285" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M1005,285 L1095,285" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<rect x="560" y="460" width="440" height="155" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="780" y="508.7" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="780" dy="0">2. If 1 fails required UX / tests:</tspan>
+<tspan x="780" dy="23.400000000000002">Import aggregates + DQ detail</tspan>
+<tspan x="780" dy="23.400000000000002">Automatic cache hit / miss routing</tspan>
+<tspan x="780" dy="23.400000000000002">F64; memory + refresh gate</tspan>
+</text>
+<path d="M780,370 L780,455" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="790" y="337" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
+<tspan x="790" dy="0">Fail / refine</tspan>
+</text>
+<rect x="1100" y="460" width="320" height="155" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="1260" y="508.7" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1260" dy="0">PASS -&gt; stay on F64</tspan>
+<tspan x="1260" dy="23.400000000000002">Verify Excel aggregation hits</tspan>
+<tspan x="1260" dy="23.400000000000002">Retain all 15y</tspan>
+<tspan x="1260" dy="23.400000000000002">No second detail copy in 2a</tspan>
+</text>
+<path d="M1005,535 L1095,535" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<rect x="1490" y="460" width="305" height="155" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="1642.5" y="508.7" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1642.5" dy="0">3. ONLY IF BOTH FAIL</tspan>
+<tspan x="1642.5" dy="23.400000000000002">Muted fallback: F256 for 4B</tspan>
+<tspan x="1642.5" dy="23.400000000000002">F128 only up to 3B</tspan>
+<tspan x="1642.5" dy="23.400000000000002">Does not redesign the model</tspan>
+</text>
+<path d="M1005,620 L1480,690" fill="none" stroke="#495057" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
+<text x="1015" y="587" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
+<tspan x="1015" dy="0">Both fail agreed tests; failure addressed by capacity?</tspan>
+</text>
+<path d="M1630,685 L1630,620" fill="none" stroke="#495057" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
+<text x="40" y="743" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Do not interpret cross-cloud latency, a stuck copy, incorrect security, or unsupported Excel MDX as evidence that a bigger SKU fixes the problem.</tspan>
+<tspan x="40" dy="23.400000000000002">Proposed one-week acceptance thresholds and public regional list prices are in the evidence appendix; none are measured customer outcomes.</tspan>
+</text>
+<rect x="40" y="825" width="270" height="55" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="175" y="858.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="175" dy="0">Direct Lake on OneLake</tspan>
+</text>
+<rect x="330" y="825" width="260" height="55" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="460" y="858.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="460" dy="0">Import / Dual cache</tspan>
+</text>
+<rect x="610" y="825" width="270" height="55" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text x="745" y="858.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="745" dy="0">DirectQuery (explicit)</tspan>
+</text>
+<rect x="900" y="825" width="270" height="55" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="1035" y="858.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1035" dy="0">Source / orchestration</tspan>
+</text>
+<text x="1200" y="845" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1200" dy="0">All 15 years retained: requirement TO CONFIRM.</tspan>
+<tspan x="1200" dy="20.8">Counts / cardinalities are design assumptions.</tspan>
+</text>
+</svg>

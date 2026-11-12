@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1280" viewBox="0 0 1840 1280" role="img" aria-label="Option 1a - Lead: F64 summary model; detail stays in Snowflake">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#495057"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="35" y="48" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
+<tspan x="35" dy="0">Option 1a - Lead: F64 summary model; detail stays in Snowflake</tspan>
+</text>
+<text x="35" y="94" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="35" dy="0">Direct Lake on OneLake + Import + DirectQuery, assembled via XMLA. No second Fabric copy of policy detail.</tspan>
+</text>
+<text x="40" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">SOURCE</tspan>
+</text>
+<text x="390" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="390" dy="0">LANDING / PUBLICATION</tspan>
+</text>
+<text x="740" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="740" dy="0">STORAGE</tspan>
+</text>
+<text x="1090" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1090" dy="0">SEMANTIC MODEL</tspan>
+</text>
+<text x="1480" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1480" dy="0">CONSUMERS</tspan>
+</text>
+<rect x="40" y="200" width="290" height="190" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="185" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="185" dy="0">Snowflake on AWS</tspan>
+<tspan x="185" dy="23.400000000000002">System of record</tspan>
+<tspan x="185" dy="23.400000000000002">Policy detail: 1.5B -&gt; 4B</tspan>
+<tspan x="185" dy="23.400000000000002">All 15y assumed</tspan>
+<tspan x="185" dy="23.400000000000002">Compute: Snowflake</tspan>
+</text>
+<rect x="390" y="200" width="290" height="190" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="535" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="535" dy="0">dbt summary in source</tspan>
+<tspan x="535" dy="23.400000000000002">Daily changed-month publish</tspan>
+<tspan x="535" dy="23.400000000000002">Small copy to OneLake</tspan>
+<tspan x="535" dy="23.400000000000002">~36M initial aggregate</tspan>
+<tspan x="535" dy="23.400000000000002">Pipeline jobs: F64</tspan>
+</text>
+<rect x="740" y="200" width="290" height="190" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="885" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="885" dy="0">OneLake Delta aggregate</tspan>
+<tspan x="885" dy="23.400000000000002">All 15y at month grain</tspan>
+<tspan x="885" dy="23.400000000000002">Illustrative 36M rows</tspan>
+<tspan x="885" dy="23.400000000000002">1.464B row headroom</tspan>
+<tspan x="885" dy="23.400000000000002">Storage served on F64</tspan>
+</text>
+<rect x="1090" y="200" width="310" height="190" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="1245" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1245" dy="0">Composite model - F64</tspan>
+<tspan x="1245" dy="23.400000000000002">Aggregate: Direct Lake</tspan>
+<tspan x="1245" dy="23.400000000000002">Dimensions: Import</tspan>
+<tspan x="1245" dy="23.400000000000002">Budget: &lt;25 GB total</tspan>
+<tspan x="1245" dy="23.400000000000002">No automatic routing</tspan>
+</text>
+<rect x="1480" y="200" width="300" height="190" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="1630" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">Power BI + Excel</tspan>
+<tspan x="1630" dy="23.400000000000002">Summary measures first</tspan>
+<tspan x="1630" dy="23.400000000000002">All 15y summarised</tspan>
+<tspan x="1630" dy="23.400000000000002">Import dim hierarchies</tspan>
+<tspan x="1630" dy="23.400000000000002">No SSAS parity assumed</tspan>
+</text>
+<path d="M335,295 L385,295" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M685,295 L735,295" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M1035,295 L1085,295" fill="none" stroke="#0078D4" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M1405,295 L1475,295" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<rect x="390" y="430" width="640" height="80" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text x="710" y="464.6" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="710" dy="0">No detail landing / no detail copy in Fabric</tspan>
+<tspan x="710" dy="23.400000000000002">Filtered policy query executes in Snowflake on demand</tspan>
+</text>
+<rect x="1090" y="440" width="310" height="145" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text x="1245" y="483.7" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1245" dy="0">Same F64 model</tspan>
+<tspan x="1245" dy="23.400000000000002">Policy fact: DirectQuery</tspan>
+<tspan x="1245" dy="23.400000000000002">Cross-cloud query latency</tspan>
+<tspan x="1245" dy="23.400000000000002">Snowflake compute + egress</tspan>
+</text>
+<path d="M185,395 L185,560" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
+<path d="M185,560 L1085,560" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
+<text x="195" y="527" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
+<tspan x="195" dy="0">On-demand detail path; SQL sent to Snowflake (not a daily detail copy)</tspan>
+</text>
+<path d="M1405,510 L1630,395" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
+<text x="1415" y="362" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
+<tspan x="1415" dy="0">Explicit policy pivot</tspan>
+</text>
+<text x="40" y="633" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">FIRST TEST: XMLA model with Import dimensions + Snowflake DirectQuery; verify LIMITED relationship filters and Excel pivots before scaling data.</tspan>
+</text>
+<text x="40" y="713" font-family="Arial, sans-serif" font-size="23" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Semantic model inset: shared dimensions, separate summary and policy measures</tspan>
+</text>
+<rect x="600" y="770" width="600" height="125" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="900" y="815.4" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="900" dy="0">Shared conformed dimensions - Import (preferred)</tspan>
+<tspan x="900" dy="23.400000000000002">Month, State, Product, Coverage, Channel, Segment</tspan>
+<tspan x="900" dy="23.400000000000002">Unique integer keys; hierarchies for Excel; daily refresh</tspan>
+</text>
+<rect x="65" y="950" width="650" height="140" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="390" y="1002.9" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="390" dy="0">Aggregate fact - Direct Lake on OneLake</tspan>
+<tspan x="390" dy="23.400000000000002">180 months x 200,000 combinations = 36M rows</tspan>
+<tspan x="390" dy="23.400000000000002">15y; F64; measures explicitly use this table</tspan>
+</text>
+<rect x="1090" y="950" width="650" height="140" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text x="1415" y="1002.9" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1415" dy="0">Policy fact - DirectQuery to Snowflake</tspan>
+<tspan x="1415" dy="23.400000000000002">1.5B now -&gt; 4B target; 15y assumed</tspan>
+<tspan x="1415" dy="23.400000000000002">Policy measures / filtered investigation only</tspan>
+</text>
+<path d="M690,895 L400,945" fill="none" stroke="#0078D4" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M1120,895 L1410,945" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
+<text x="85" y="916" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="85" dy="0">1:* regular; same source group</tspan>
+</text>
+<text x="1330" y="916" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1330" dy="0">1:* LIMITED; cross-source group</tspan>
+</text>
+<text x="40" y="1137" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
+<tspan x="40" dy="0">No fact-to-fact relationship. Single-direction filters from dimensions. Policy ID / Date detail fields do not filter the monthly fact.</tspan>
+<tspan x="40" dy="22.1">No automatic aggregation routing. Excel: Summary measures for pivots; Policy measures / a separate filtered detail pivot for investigation.</tspan>
+</text>
+<rect x="40" y="1190" width="270" height="55" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="175" y="1223.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="175" dy="0">Direct Lake on OneLake</tspan>
+</text>
+<rect x="330" y="1190" width="260" height="55" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="460" y="1223.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="460" dy="0">Import / Dual cache</tspan>
+</text>
+<rect x="610" y="1190" width="270" height="55" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text x="745" y="1223.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="745" dy="0">DirectQuery (explicit)</tspan>
+</text>
+<rect x="900" y="1190" width="270" height="55" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="1035" y="1223.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1035" dy="0">Source / orchestration</tspan>
+</text>
+<text x="1200" y="1210" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1200" dy="0">All 15 years retained: requirement TO CONFIRM.</tspan>
+<tspan x="1200" dy="20.8">Counts / cardinalities are design assumptions.</tspan>
+</text>
+</svg>

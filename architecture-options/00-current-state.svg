@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="820" viewBox="0 0 1840 820" role="img" aria-label="Option 0 - Current state: two distinct failure points">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#495057"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="35" y="48" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
+<tspan x="35" dy="0">Option 0 - Current state: two distinct failure points</tspan>
+</text>
+<text x="35" y="94" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="35" dy="0">Reported pilot design, not inspected. Capacity, Direct Lake type, fallback setting, and exact row count remain unconfirmed.</tspan>
+</text>
+<text x="40" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">SOURCE</tspan>
+</text>
+<text x="390" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="390" dy="0">LANDING / PUBLICATION</tspan>
+</text>
+<text x="740" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="740" dy="0">STORAGE</tspan>
+</text>
+<text x="1090" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1090" dy="0">SEMANTIC MODEL</tspan>
+</text>
+<text x="1480" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1480" dy="0">CONSUMERS</tspan>
+</text>
+<rect x="40" y="220" width="290" height="200" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="185" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="185" dy="0">Snowflake on AWS</tspan>
+<tspan x="185" dy="23.400000000000002">System of record</tspan>
+<tspan x="185" dy="23.400000000000002">~1.5B -&gt; ~4B detail</tspan>
+<tspan x="185" dy="23.400000000000002">15y coverage unconfirmed</tspan>
+<tspan x="185" dy="23.400000000000002">Compute: Snowflake</tspan>
+</text>
+<rect x="390" y="220" width="290" height="200" rx="12" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text x="535" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="535" dy="0">Pipeline copy - F64?</tspan>
+<tspan x="535" dy="23.400000000000002">Daily incremental</tspan>
+<tspan x="535" dy="23.400000000000002">Reported variable delay:</tspan>
+<tspan x="535" dy="23.400000000000002">minutes to hours</tspan>
+<tspan x="535" dy="23.400000000000002">~30M new rows / month</tspan>
+</text>
+<rect x="740" y="220" width="290" height="200" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="885" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="885" dy="0">OneLake Delta fact</tspan>
+<tspan x="885" dy="23.400000000000002">~1.5B rows; 150 columns</tspan>
+<tspan x="885" dy="23.400000000000002">~105 GB compressed</tspan>
+<tspan x="885" dy="23.400000000000002">158 files reported</tspan>
+<tspan x="885" dy="23.400000000000002">15y coverage unconfirmed</tspan>
+</text>
+<rect x="1090" y="220" width="310" height="200" rx="12" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text x="1245" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1245" dy="0">Direct Lake model - F64?</tspan>
+<tspan x="1245" dy="23.400000000000002">1.5B rows/table maximum</tspan>
+<tspan x="1245" dy="23.400000000000002">At ~1.5B: ~zero margin</tspan>
+<tspan x="1245" dy="23.400000000000002">At 4B: 2.5B over limit</tspan>
+<tspan x="1245" dy="23.400000000000002">DL type / fallback unknown</tspan>
+</text>
+<rect x="1480" y="220" width="300" height="200" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="1630" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">Power BI + Excel</tspan>
+<tspan x="1630" dy="23.400000000000002">Reported row-limit error</tspan>
+<tspan x="1630" dy="23.400000000000002">Excel usage unconfirmed</tspan>
+<tspan x="1630" dy="23.400000000000002">SSAS cube replacement</tspan>
+<tspan x="1630" dy="23.400000000000002">Parity not yet tested</tspan>
+</text>
+<path d="M335,320 L385,320" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M685,320 L735,320" fill="none" stroke="#D13438" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M1035,320 L1085,320" fill="none" stroke="#D13438" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M1405,320 L1475,320" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
+<rect x="390" y="490" width="640" height="115" rx="12" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text x="710" y="530.4" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="710" dy="0">BREAK 1: arrival / refresh reliability</tspan>
+<tspan x="710" dy="23.400000000000002">158 files is below 5,000; row groups still need checking.</tspan>
+<tspan x="710" dy="23.400000000000002">OPTIMIZE / VACUUM cannot remove a true total-row excess.</tspan>
+</text>
+<rect x="1090" y="490" width="690" height="115" rx="12" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text x="1435" y="530.4" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1435" dy="0">BREAK 2: &gt;1.5B rows on F64</tspan>
+<tspan x="1435" dy="23.400000000000002">OneLake: refresh fails / model unqueryable.</tspan>
+<tspan x="1435" dy="23.400000000000002">SQL: DirectQuery fallback only when enabled.</tspan>
+</text>
+<text x="40" y="668" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">FIRST TEST: capture exact error, count rows and row groups, confirm assigned SKU, Direct Lake type, and fallback configuration. No tenant access was used.</tspan>
+</text>
+<rect x="40" y="735" width="270" height="55" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="175" y="768.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="175" dy="0">Direct Lake on OneLake</tspan>
+</text>
+<rect x="330" y="735" width="260" height="55" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="460" y="768.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="460" dy="0">Import / Dual cache</tspan>
+</text>
+<rect x="610" y="735" width="270" height="55" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text x="745" y="768.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="745" dy="0">DirectQuery (explicit)</tspan>
+</text>
+<rect x="900" y="735" width="270" height="55" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="1035" y="768.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1035" dy="0">Source / orchestration</tspan>
+</text>
+<text x="1200" y="755" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1200" dy="0">All 15 years retained: requirement TO CONFIRM.</tspan>
+<tspan x="1200" dy="20.8">Counts / cardinalities are design assumptions.</tspan>
+</text>
+</svg>
