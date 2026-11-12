@@ -1,99 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="830" viewBox="0 0 1840 830" role="img" aria-label="Option 3 - LAST RESORT: scale only after F64 model-change tests fail">
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#495057"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1060" viewBox="0 0 1840 1060" role="img" aria-labelledby="03-scale-fallback-title">
+<defs>
+<marker id="dl-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#0078D4"/></marker>
+<marker id="imp-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#5C2D91"/></marker>
+<marker id="dq-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#F7630C"/></marker>
+<marker id="neutral-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#495057"/></marker>
+<marker id="issue-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#D13438"/></marker>
+</defs>
 <rect width="100%" height="100%" fill="white"/>
-<text x="35" y="48" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Option 3 - LAST RESORT: scale only after F64 model-change tests fail</tspan>
+<text id="03-scale-fallback-title" data-role="title" x="40" y="50" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Option 3 - LAST RESORT: scale only after F64 model-change tests fail</tspan>
 </text>
-<text x="35" y="94" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="35" dy="0">No semantic grain change. F128 cannot contain a 4B-row Direct Lake table; F256 can by row count, not automatically by memory or throughput.</tspan>
+<text id="03-scale-fallback-subtitle" data-role="note" x="40" y="96" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">No grain change. F128 cannot hold a 4B-row Direct Lake table; F256 fits by row count, not automatically by memory or throughput.</tspan>
 </text>
-<text x="40" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="40" dy="0">SOURCE</tspan>
+<rect id="03-scale-fallback-lane-0" data-role="lane-header" x="40" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="03-scale-fallback-lane-0-label" data-role="bound-label" data-container="03-scale-fallback-lane-0" x="190" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">SOURCE</tspan>
 </text>
-<text x="390" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="390" dy="0">LANDING / PUBLICATION</tspan>
+<rect id="03-scale-fallback-lane-1" data-role="lane-header" x="400" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="03-scale-fallback-lane-1-label" data-role="bound-label" data-container="03-scale-fallback-lane-1" x="550" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">LANDING / PUBLICATION</tspan>
 </text>
-<text x="740" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="740" dy="0">STORAGE</tspan>
+<rect id="03-scale-fallback-lane-2" data-role="lane-header" x="760" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="03-scale-fallback-lane-2-label" data-role="bound-label" data-container="03-scale-fallback-lane-2" x="910" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">STORAGE / CACHE</tspan>
 </text>
-<text x="1090" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1090" dy="0">SEMANTIC MODEL</tspan>
+<rect id="03-scale-fallback-lane-3" data-role="lane-header" x="1120" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="03-scale-fallback-lane-3-label" data-role="bound-label" data-container="03-scale-fallback-lane-3" x="1270" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">SEMANTIC MODEL</tspan>
 </text>
-<text x="1480" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1480" dy="0">CONSUMERS</tspan>
+<rect id="03-scale-fallback-lane-4" data-role="lane-header" x="1480" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="03-scale-fallback-lane-4-label" data-role="bound-label" data-container="03-scale-fallback-lane-4" x="1630" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">CONSUMERS</tspan>
 </text>
-<rect x="40" y="220" width="290" height="205" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="185" y="282" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="185" dy="0">Snowflake on AWS</tspan>
-<tspan x="185" dy="23.400000000000002">System of record</tspan>
-<tspan x="185" dy="23.400000000000002">Policy detail: 1.5B -&gt; 4B</tspan>
-<tspan x="185" dy="23.400000000000002">All 15y assumed</tspan>
-<tspan x="185" dy="23.400000000000002">Compute: Snowflake</tspan>
+<rect id="03-scale-fallback-source" data-role="primary" x="40" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="03-scale-fallback-source-label" data-role="bound-label" data-container="03-scale-fallback-source" x="190" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">Snowflake on AWS</tspan>
+<tspan x="190" dy="23.4">System of record</tspan>
+<tspan x="190" dy="23.4">Policy rows: 1.5B -&gt; 4B*</tspan>
+<tspan x="190" dy="23.4">All 15 years assumed*</tspan>
+<tspan x="190" dy="23.4">Source compute: Snowflake</tspan>
 </text>
-<rect x="390" y="220" width="290" height="205" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="535" y="282" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="535" dy="0">Existing pipeline copy</tspan>
-<tspan x="535" dy="23.400000000000002">Daily increments</tspan>
-<tspan x="535" dy="23.400000000000002">Same reliability exposure</tspan>
-<tspan x="535" dy="23.400000000000002">Same transfer / egress</tspan>
-<tspan x="535" dy="23.400000000000002">Larger-capacity jobs</tspan>
+<rect id="03-scale-fallback-publication" data-role="primary" x="400" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="03-scale-fallback-publication-label" data-role="bound-label" data-container="03-scale-fallback-publication" x="550" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">Existing pipeline copy</tspan>
+<tspan x="550" dy="23.4">Daily increments*</tspan>
+<tspan x="550" dy="23.4">Same reliability exposure</tspan>
+<tspan x="550" dy="23.4">Same transfer / egress</tspan>
+<tspan x="550" dy="23.4">No ingestion redesign</tspan>
 </text>
-<rect x="740" y="220" width="290" height="205" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="885" y="282" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="885" dy="0">OneLake Delta detail</tspan>
-<tspan x="885" dy="23.400000000000002">1.5B -&gt; 4B; 15y</tspan>
-<tspan x="885" dy="23.400000000000002">Full second detail copy</tspan>
-<tspan x="885" dy="23.400000000000002">No grain change</tspan>
-<tspan x="885" dy="23.400000000000002">Storage still required</tspan>
+<rect id="03-scale-fallback-detail-storage" data-role="primary" x="760" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="03-scale-fallback-detail-storage-label" data-role="bound-label" data-container="03-scale-fallback-detail-storage" x="910" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">OneLake Delta detail</tspan>
+<tspan x="910" dy="23.4">1.5B -&gt; 4B rows* / 15y*</tspan>
+<tspan x="910" dy="23.4">Full second detail copy</tspan>
+<tspan x="910" dy="23.4">No grain change</tspan>
+<tspan x="910" dy="23.4">Storage still required</tspan>
 </text>
-<rect x="1090" y="220" width="310" height="205" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1245" y="282" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1245" dy="0">Single Direct Lake fact</tspan>
-<tspan x="1245" dy="23.400000000000002">F128: 3B max; 50 GB</tspan>
-<tspan x="1245" dy="23.400000000000002">4B fails on F128</tspan>
-<tspan x="1245" dy="23.400000000000002">F256: 6B max; 100 GB</tspan>
-<tspan x="1245" dy="23.400000000000002">4B leaves 2B margin</tspan>
+<rect id="03-scale-fallback-detail-model" data-role="primary" x="1120" y="210" width="300" height="220" rx="10" fill="#EEF3F8" stroke="#6F8DA9" stroke-width="2"/>
+<text id="03-scale-fallback-detail-model-label" data-role="bound-label" data-container="03-scale-fallback-detail-model" x="1270" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">Single Direct Lake fact</tspan>
+<tspan x="1270" dy="23.4">F128: 3B max; 50 GB</tspan>
+<tspan x="1270" dy="23.4">4B fails on F128</tspan>
+<tspan x="1270" dy="23.4">F256: 6B max; 100 GB</tspan>
+<tspan x="1270" dy="23.4">4B leaves 2B row margin</tspan>
 </text>
-<rect x="1480" y="220" width="300" height="205" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1630" y="282" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<rect id="03-scale-fallback-consumers" data-role="primary" x="1480" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="03-scale-fallback-consumers-label" data-role="bound-label" data-container="03-scale-fallback-consumers" x="1630" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
 <tspan x="1630" dy="0">Power BI + Excel</tspan>
-<tspan x="1630" dy="23.400000000000002">Same DL / MDX limits</tspan>
-<tspan x="1630" dy="23.400000000000002">No modelling guidance</tspan>
-<tspan x="1630" dy="23.400000000000002">delivered by scaling alone</tspan>
-<tspan x="1630" dy="23.400000000000002">All 15y policy grain</tspan>
+<tspan x="1630" dy="23.4">Same DL / MDX limits</tspan>
+<tspan x="1630" dy="23.4">All 15y at policy grain*</tspan>
+<tspan x="1630" dy="23.4">Scaling does not redesign</tspan>
+<tspan x="1630" dy="23.4">or restore cube features</tspan>
 </text>
-<path d="M335,325 L385,325" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M685,325 L735,325" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1035,325 L1085,325" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1405,325 L1475,325" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<rect x="390" y="500" width="1010" height="135" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="895" y="538.7" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="895" dy="0">JUSTIFY ONLY WITH EVIDENCE</tspan>
-<tspan x="895" dy="23.400000000000002">Option 1: required summary grain, limited relationships or Excel tests fail after tuning.</tspan>
-<tspan x="895" dy="23.400000000000002">Option 2: required grain cannot fit Import/refresh budget or critical queries cannot hit aggregates.</tspan>
-<tspan x="895" dy="23.400000000000002">Both must fail agreed SLAs; rule out Snowflake/network/copy bottlenecks before buying capacity.</tspan>
+<path id="03-scale-fallback-source-to-copy" data-role="connector" data-start="03-scale-fallback-source" data-end="03-scale-fallback-publication" d="M348,320 L392,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="03-scale-fallback-copy-to-storage" data-role="connector" data-start="03-scale-fallback-publication" data-end="03-scale-fallback-detail-storage" d="M708,320 L752,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="03-scale-fallback-storage-to-model" data-role="connector" data-start="03-scale-fallback-detail-storage" data-end="03-scale-fallback-detail-model" d="M1068,320 L1112,320" fill="none" stroke="#0078D4" stroke-width="2" marker-end="url(#dl-arrow)"/>
+<path id="03-scale-fallback-model-to-consumers" data-role="connector" data-start="03-scale-fallback-detail-model" data-end="03-scale-fallback-consumers" d="M1428,320 L1472,320" fill="none" stroke="#0078D4" stroke-width="2" marker-end="url(#dl-arrow)"/>
+<rect id="03-scale-fallback-fallback-gate" data-role="callout" x="400" y="510" width="1020" height="170" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="03-scale-fallback-fallback-gate-label" data-role="bound-label" data-container="03-scale-fallback-fallback-gate" x="910" y="566.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">GATED FALLBACK - EVIDENCE REQUIRED</tspan>
+<tspan x="910" dy="23.4">Option 1: required grain, limited relationships or Excel tests still fail after tuning.</tspan>
+<tspan x="910" dy="23.4">Option 2: required cache / refresh cannot fit, or critical queries cannot hit aggregates.</tspan>
+<tspan x="910" dy="23.4">Both must fail agreed criteria for a capacity-solvable reason; a stuck copy is not one.</tspan>
 </text>
-<text x="40" y="693" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="40" dy="0">FIRST TEST: only after Options 1 and 2 fail, propose a separate synthetic sandbox benchmark and seek approval. No resource changes were made.</tspan>
+<text id="03-scale-fallback-first-test" data-role="note" x="40" y="788" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">FIRST TEST: only after both F64 patterns fail, propose an approved synthetic sandbox benchmark on the larger SKU.</tspan>
+<tspan x="40" dy="23.4">No scale-up or tenant inspection was performed; check working set, throughput and other workload occupancy.</tspan>
 </text>
-<rect x="40" y="745" width="270" height="55" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="175" y="778.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="175" dy="0">Direct Lake on OneLake</tspan>
+<rect id="03-scale-fallback-legend-chip-0" data-role="legend-chip" x="40" y="920" width="22" height="22" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="03-scale-fallback-legend-text-0" data-role="note" x="74" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="74" dy="0">Direct Lake</tspan>
 </text>
-<rect x="330" y="745" width="260" height="55" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="460" y="778.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="460" dy="0">Import / Dual cache</tspan>
+<rect id="03-scale-fallback-legend-chip-1" data-role="legend-chip" x="330" y="920" width="22" height="22" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="03-scale-fallback-legend-text-1" data-role="note" x="364" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="364" dy="0">Import / Dual</tspan>
 </text>
-<rect x="610" y="745" width="270" height="55" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="745" y="778.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="745" dy="0">DirectQuery (explicit)</tspan>
+<rect id="03-scale-fallback-legend-chip-2" data-role="legend-chip" x="650" y="920" width="22" height="22" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="03-scale-fallback-legend-text-2" data-role="note" x="684" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="684" dy="0">DirectQuery</tspan>
 </text>
-<rect x="900" y="745" width="270" height="55" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1035" y="778.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1035" dy="0">Source / orchestration</tspan>
+<rect id="03-scale-fallback-legend-chip-3" data-role="legend-chip" x="950" y="920" width="22" height="22" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="03-scale-fallback-legend-text-3" data-role="note" x="984" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="984" dy="0">Source / processing / gates</tspan>
 </text>
-<text x="1200" y="765" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1200" dy="0">All 15 years retained: requirement TO CONFIRM.</tspan>
-<tspan x="1200" dy="20.8">Counts / cardinalities are design assumptions.</tspan>
+<rect id="03-scale-fallback-legend-chip-4" data-role="legend-chip" x="1390" y="920" width="22" height="22" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="03-scale-fallback-legend-text-4" data-role="note" x="1424" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1424" dy="0">Reported issue / guard</tspan>
+</text>
+<text id="03-scale-fallback-legend-flow" data-role="note" x="40" y="976" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Architecture arrows: solid = publication / summary path; dashed double arrows = on-demand queries and results. Inset lines show relationships.</tspan>
+</text>
+<text id="03-scale-fallback-legend-assumptions" data-role="note" x="40" y="1006" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">* Reported / illustrative counts and 15-year coverage need confirmation. Assigned SKU and proposed memory targets are not measured here.</tspan>
 </text>
 </svg>

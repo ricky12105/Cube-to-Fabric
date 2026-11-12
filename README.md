@@ -51,14 +51,35 @@ F128 does not cover a 4-billion-row Direct Lake table.
 ## Viewing and editing
 
 - Open the HTML files directly in a browser; no package installation, build or
-  local server is required.
+  local server is required. On narrow screens, scroll individual diagrams
+  horizontally or use their full-size SVG links.
 - Open the PDF for the single-page comparison, or print the comparison HTML
-  using its A3 landscape layout.
+  using its A3 landscape layout. Printing the diagram gallery uses one complete
+  diagram per A3 landscape page.
 - Open the combined board or an individual `.excalidraw` file in an approved
   Excalidraw editor. SVG files provide browser-friendly previews.
 - The editable diagrams, SVG previews, comparison HTML and PDF are separate
-  saved artifacts. Keep affected versions consistent when revising the pack;
-  no regeneration scripts are included.
+  saved artifacts. Regenerate diagram formats together using the renderer
+  below. Changes to the comparison HTML still require a separate PDF export.
+
+### Regenerating and checking diagrams
+
+The [diagram renderer](scripts/render-diagrams.cjs) contains the six diagram
+definitions and uses Node.js built-ins only; no package installation is needed.
+It generates the individual SVG/Excalidraw files, combined board and gallery.
+For repeatable published updates, change those definitions; regeneration
+overwrites manual changes to the exported SVG and Excalidraw files.
+
+```powershell
+node .\scripts\render-diagrams.cjs
+node .\scripts\render-diagrams.cjs --check
+```
+
+The check verifies lane alignment, native shape bindings and endpoint gaps,
+connector/node crossings and generated-file consistency. Also inspect every SVG
+in a browser after editing text, because font metrics and text/connector
+overlaps need rendered checks. The decision path uses decision-stage headings,
+not the source/landing/storage lanes of the architecture options.
 
 ## GitHub Pages
 

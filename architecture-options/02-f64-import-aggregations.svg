@@ -1,116 +1,137 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="930" viewBox="0 0 1840 930" role="img" aria-label="Option 2 - F64 alternative: Import aggregates + automatic detail routing">
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#495057"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1060" viewBox="0 0 1840 1060" role="img" aria-labelledby="02-f64-import-aggregations-title">
+<defs>
+<marker id="dl-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#0078D4"/></marker>
+<marker id="imp-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#5C2D91"/></marker>
+<marker id="dq-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#F7630C"/></marker>
+<marker id="neutral-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#495057"/></marker>
+<marker id="issue-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#D13438"/></marker>
+</defs>
 <rect width="100%" height="100%" fill="white"/>
-<text x="35" y="48" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Option 2 - F64 alternative: Import aggregates + automatic detail routing</tspan>
+<text id="02-f64-import-aggregations-title" data-role="title" x="40" y="50" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Option 2 - F64 alternative: Import aggregates + automatic detail routing</tspan>
 </text>
-<text x="35" y="94" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Built in Power BI Desktop. Import aggregates mapped to DirectQuery detail; source-aligned Dual dimensions enable regular relationships.</tspan>
+<text id="02-f64-import-aggregations-subtitle" data-role="note" x="40" y="96" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Desktop Manage aggregations: Import aggregates over DirectQuery detail, with same-source Dual dimensions.</tspan>
 </text>
-<text x="40" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="40" dy="0">SOURCE</tspan>
+<rect id="02-f64-import-aggregations-lane-0" data-role="lane-header" x="40" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="02-f64-import-aggregations-lane-0-label" data-role="bound-label" data-container="02-f64-import-aggregations-lane-0" x="190" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">SOURCE</tspan>
 </text>
-<text x="390" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="390" dy="0">LANDING / PUBLICATION</tspan>
+<rect id="02-f64-import-aggregations-lane-1" data-role="lane-header" x="400" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="02-f64-import-aggregations-lane-1-label" data-role="bound-label" data-container="02-f64-import-aggregations-lane-1" x="550" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">LANDING / PUBLICATION</tspan>
 </text>
-<text x="740" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="740" dy="0">STORAGE</tspan>
+<rect id="02-f64-import-aggregations-lane-2" data-role="lane-header" x="760" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="02-f64-import-aggregations-lane-2-label" data-role="bound-label" data-container="02-f64-import-aggregations-lane-2" x="910" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">STORAGE / CACHE</tspan>
 </text>
-<text x="1090" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1090" dy="0">SEMANTIC MODEL</tspan>
+<rect id="02-f64-import-aggregations-lane-3" data-role="lane-header" x="1120" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="02-f64-import-aggregations-lane-3-label" data-role="bound-label" data-container="02-f64-import-aggregations-lane-3" x="1270" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">SEMANTIC MODEL</tspan>
 </text>
-<text x="1480" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1480" dy="0">CONSUMERS</tspan>
+<rect id="02-f64-import-aggregations-lane-4" data-role="lane-header" x="1480" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="02-f64-import-aggregations-lane-4-label" data-role="bound-label" data-container="02-f64-import-aggregations-lane-4" x="1630" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">CONSUMERS</tspan>
 </text>
-<rect x="40" y="220" width="290" height="210" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="185" y="272.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="185" dy="0">Snowflake on AWS</tspan>
-<tspan x="185" dy="23.400000000000002">Policy fact: 1.5B -&gt; 4B</tspan>
-<tspan x="185" dy="23.400000000000002">All 15y assumed</tspan>
-<tspan x="185" dy="23.400000000000002">Source dbt aggregate</tspan>
-<tspan x="185" dy="23.400000000000002">Illustrative 36M rows</tspan>
-<tspan x="185" dy="23.400000000000002">Compute: Snowflake</tspan>
+<rect id="02-f64-import-aggregations-model-boundary" data-role="container" x="1106" y="196" width="328" height="538" rx="10" fill="transparent" stroke="#94A3B8" stroke-width="2" stroke-dasharray="7 5"/>
+<rect id="02-f64-import-aggregations-source" data-role="primary" x="40" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="02-f64-import-aggregations-source-label" data-role="bound-label" data-container="02-f64-import-aggregations-source" x="190" y="267.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">Snowflake on AWS</tspan>
+<tspan x="190" dy="23.4">Policy fact: 1.5B -&gt; 4B*</tspan>
+<tspan x="190" dy="23.4">All 15y assumed*</tspan>
+<tspan x="190" dy="23.4">Source dbt summary: 36M*</tspan>
+<tspan x="190" dy="23.4">Same-source dimensions</tspan>
+<tspan x="190" dy="23.4">Source compute: Snowflake</tspan>
 </text>
-<rect x="390" y="220" width="290" height="210" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="535" y="272.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="535" dy="0">Scheduled Import refresh</tspan>
-<tspan x="535" dy="23.400000000000002">Aggregate + Dual dim cache</tspan>
-<tspan x="535" dy="23.400000000000002">Folds to source aggregate</tspan>
-<tspan x="535" dy="23.400000000000002">Daily changed periods</tspan>
-<tspan x="535" dy="23.400000000000002">No OneLake copy required</tspan>
-<tspan x="535" dy="23.400000000000002">Refresh orchestration: F64</tspan>
+<rect id="02-f64-import-aggregations-publication" data-role="primary" x="400" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="02-f64-import-aggregations-publication-label" data-role="bound-label" data-container="02-f64-import-aggregations-publication" x="550" y="267.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">Scheduled Import refresh</tspan>
+<tspan x="550" dy="23.4">Aggregate + Dual dim cache</tspan>
+<tspan x="550" dy="23.4">Source query folding</tspan>
+<tspan x="550" dy="23.4">Incremental if configured</tspan>
+<tspan x="550" dy="23.4">No OneLake detail copy</tspan>
+<tspan x="550" dy="23.4">Refresh compute: F64</tspan>
 </text>
-<rect x="740" y="220" width="290" height="210" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="885" y="272.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="885" dy="0">VertiPaq cache on F64</tspan>
-<tspan x="885" dy="23.400000000000002">Import aggregate: 36M</tspan>
-<tspan x="885" dy="23.400000000000002">All 15y monthly</tspan>
-<tspan x="885" dy="23.400000000000002">Dual dimensions</tspan>
-<tspan x="885" dy="23.400000000000002">Measure compressed size</tspan>
-<tspan x="885" dy="23.400000000000002">Budget incl refresh &lt;25GB</tspan>
+<rect id="02-f64-import-aggregations-summary-storage" data-role="primary" x="760" y="210" width="300" height="220" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="02-f64-import-aggregations-summary-storage-label" data-role="bound-label" data-container="02-f64-import-aggregations-summary-storage" x="910" y="267.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">Model's VertiPaq cache</tspan>
+<tspan x="910" dy="23.4">Import aggregate: 36M*</tspan>
+<tspan x="910" dy="23.4">All 15y at monthly grain*</tspan>
+<tspan x="910" dy="23.4">Dual dimension cache</tspan>
+<tspan x="910" dy="23.4">Target peak &lt;=20 GB*</tspan>
+<tspan x="910" dy="23.4">25 GB/model upper bound</tspan>
 </text>
-<rect x="1090" y="220" width="310" height="210" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="1245" y="272.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1245" dy="0">F64 composite model</tspan>
-<tspan x="1245" dy="23.400000000000002">Hidden Import aggregate</tspan>
-<tspan x="1245" dy="23.400000000000002">Manage aggregations maps</tspan>
-<tspan x="1245" dy="23.400000000000002">Measures use detail table</tspan>
-<tspan x="1245" dy="23.400000000000002">Hit -&gt; Import cache</tspan>
-<tspan x="1245" dy="23.400000000000002">Miss -&gt; DirectQuery</tspan>
+<rect id="02-f64-import-aggregations-summary-model" data-role="primary" x="1120" y="210" width="300" height="220" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="02-f64-import-aggregations-summary-model-label" data-role="bound-label" data-container="02-f64-import-aggregations-summary-model" x="1270" y="267.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">F64 composite model</tspan>
+<tspan x="1270" dy="23.4">Hidden Import aggregate</tspan>
+<tspan x="1270" dy="23.4">Manage aggregations maps</tspan>
+<tspan x="1270" dy="23.4">Measures use detail table</tspan>
+<tspan x="1270" dy="23.4">Hit -&gt; Import cache</tspan>
+<tspan x="1270" dy="23.4">Miss -&gt; DirectQuery</tspan>
 </text>
-<rect x="1480" y="220" width="300" height="210" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1630" y="272.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<rect id="02-f64-import-aggregations-consumers" data-role="primary" x="1480" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="02-f64-import-aggregations-consumers-label" data-role="bound-label" data-container="02-f64-import-aggregations-consumers" x="1630" y="267.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
 <tspan x="1630" dy="0">Power BI + Excel</tspan>
-<tspan x="1630" dy="23.400000000000002">Same business measures</tspan>
-<tspan x="1630" dy="23.400000000000002">Summary hits cache</tspan>
-<tspan x="1630" dy="23.400000000000002">Policy query misses cache</tspan>
-<tspan x="1630" dy="23.400000000000002">Dual dim hierarchies test</tspan>
-<tspan x="1630" dy="23.400000000000002">MDX parity still not assured</tspan>
+<tspan x="1630" dy="23.4">Same business measures</tspan>
+<tspan x="1630" dy="23.4">Covered summary -&gt; cache</tspan>
+<tspan x="1630" dy="23.4">Other queries -&gt; DirectQuery</tspan>
+<tspan x="1630" dy="23.4">Verify Dual dim hierarchies</tspan>
+<tspan x="1630" dy="23.4">MDX parity is not assured</tspan>
 </text>
-<path d="M335,325 L385,325" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M685,325 L735,325" fill="none" stroke="#5C2D91" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1035,325 L1085,325" fill="none" stroke="#5C2D91" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1405,325 L1475,325" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<rect x="390" y="520" width="640" height="110" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="710" y="569.6" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="710" dy="0">Preferred detail stays in Snowflake: no second detail estate</tspan>
-<tspan x="710" dy="23.400000000000002">Alternative: copied OneLake detail via SQL endpoint (adds copy dependency)</tspan>
+<path id="02-f64-import-aggregations-source-to-import" data-role="connector" data-start="02-f64-import-aggregations-source" data-end="02-f64-import-aggregations-publication" d="M348,320 L392,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="02-f64-import-aggregations-refresh-to-cache" data-role="connector" data-start="02-f64-import-aggregations-publication" data-end="02-f64-import-aggregations-summary-storage" d="M708,320 L752,320" fill="none" stroke="#5C2D91" stroke-width="2" marker-end="url(#imp-arrow)"/>
+<path id="02-f64-import-aggregations-cache-to-model" data-role="connector" data-start="02-f64-import-aggregations-summary-storage" data-end="02-f64-import-aggregations-summary-model" d="M1068,320 L1112,320" fill="none" stroke="#5C2D91" stroke-width="2" marker-end="url(#imp-arrow)"/>
+<path id="02-f64-import-aggregations-summary-to-consumers" data-role="connector" data-start="02-f64-import-aggregations-summary-model" data-end="02-f64-import-aggregations-consumers" d="M1428,320 L1472,320" fill="none" stroke="#5C2D91" stroke-width="2" marker-end="url(#imp-arrow)"/>
+<rect id="02-f64-import-aggregations-no-detail-copy" data-role="callout" x="400" y="470" width="660" height="90" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="02-f64-import-aggregations-no-detail-copy-label" data-role="bound-label" data-container="02-f64-import-aggregations-no-detail-copy" x="730" y="509.6" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="730" dy="0">Preferred: policy detail stays in Snowflake</tspan>
+<tspan x="730" dy="23.4">OneLake detail is a separate copied-data variant</tspan>
 </text>
-<rect x="1090" y="505" width="310" height="145" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="1245" y="537" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1245" dy="0">Policy fact: DirectQuery</tspan>
-<tspan x="1245" dy="23.400000000000002">1.5B -&gt; 4B; 15y</tspan>
-<tspan x="1245" dy="23.400000000000002">Same-source Dual dims</tspan>
-<tspan x="1245" dy="23.400000000000002">Regular 1:* relationships</tspan>
-<tspan x="1245" dy="23.400000000000002">Snowflake query cost</tspan>
+<rect id="02-f64-import-aggregations-detail-model" data-role="node" x="1120" y="530" width="300" height="190" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="02-f64-import-aggregations-detail-model-label" data-role="bound-label" data-container="02-f64-import-aggregations-detail-model" x="1270" y="584.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">Same model - policy fact</tspan>
+<tspan x="1270" dy="23.4">DirectQuery to Snowflake</tspan>
+<tspan x="1270" dy="23.4">1.5B -&gt; 4B rows* / 15y*</tspan>
+<tspan x="1270" dy="23.4">Same-source Dual dimensions</tspan>
+<tspan x="1270" dy="23.4">Regular 1:* relationships</tspan>
 </text>
-<path d="M185,435 L185,575" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
-<path d="M185,585 L1085,585" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
-<text x="195" y="552" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
-<tspan x="195" dy="0">Automatic cache miss path; validate aggregation hits with traces</tspan>
+<path id="02-f64-import-aggregations-detail-source-path" data-role="connector" data-start="02-f64-import-aggregations-source" data-end="02-f64-import-aggregations-detail-model" d="M190,438 L190,625 L1112,625" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-start="url(#dq-arrow)" marker-end="url(#dq-arrow)"/>
+<text id="02-f64-import-aggregations-detail-source-label" data-role="note" x="400" y="597" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
+<tspan x="400" dy="0">Cache miss: SQL to source; results to model</tspan>
 </text>
-<text x="40" y="723" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="40" dy="0">FIRST TEST: 36M-row narrow aggregate compression + peak incremental refresh memory; then trace Excel MDX summary hits and detail misses.</tspan>
-<tspan x="40" dy="23.400000000000002">Best when transparent routing / Excel UX outweighs refresh memory. Import aggregation tables are ignored with SSO-enabled sources (Learn).</tspan>
+<path id="02-f64-import-aggregations-detail-consumer-path" data-role="connector" data-start="02-f64-import-aggregations-detail-model" data-end="02-f64-import-aggregations-consumers" d="M1428,625 L1630,625 L1630,438" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-start="url(#dq-arrow)" marker-end="url(#dq-arrow)"/>
+<text id="02-f64-import-aggregations-detail-consumer-label" data-role="note" x="1480" y="677" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
+<tspan x="1480" dy="0">Same measures; detail miss</tspan>
 </text>
-<rect x="40" y="840" width="270" height="55" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="175" y="873.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="175" dy="0">Direct Lake on OneLake</tspan>
+<text id="02-f64-import-aggregations-first-test" data-role="note" x="40" y="788" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">FIRST TEST: aggregate compression + peak incremental-refresh memory, then trace Excel summary hits and detail misses.</tspan>
+<tspan x="40" dy="23.4">SECURITY GATE: SSO-enabled sources ignore Import aggregates; approve identity and RLS before benchmarking.</tspan>
 </text>
-<rect x="330" y="840" width="260" height="55" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="460" y="873.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="460" dy="0">Import / Dual cache</tspan>
+<rect id="02-f64-import-aggregations-legend-chip-0" data-role="legend-chip" x="40" y="920" width="22" height="22" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="02-f64-import-aggregations-legend-text-0" data-role="note" x="74" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="74" dy="0">Direct Lake</tspan>
 </text>
-<rect x="610" y="840" width="270" height="55" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="745" y="873.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="745" dy="0">DirectQuery (explicit)</tspan>
+<rect id="02-f64-import-aggregations-legend-chip-1" data-role="legend-chip" x="330" y="920" width="22" height="22" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="02-f64-import-aggregations-legend-text-1" data-role="note" x="364" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="364" dy="0">Import / Dual</tspan>
 </text>
-<rect x="900" y="840" width="270" height="55" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1035" y="873.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1035" dy="0">Source / orchestration</tspan>
+<rect id="02-f64-import-aggregations-legend-chip-2" data-role="legend-chip" x="650" y="920" width="22" height="22" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="02-f64-import-aggregations-legend-text-2" data-role="note" x="684" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="684" dy="0">DirectQuery</tspan>
 </text>
-<text x="1200" y="860" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1200" dy="0">All 15 years retained: requirement TO CONFIRM.</tspan>
-<tspan x="1200" dy="20.8">Counts / cardinalities are design assumptions.</tspan>
+<rect id="02-f64-import-aggregations-legend-chip-3" data-role="legend-chip" x="950" y="920" width="22" height="22" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="02-f64-import-aggregations-legend-text-3" data-role="note" x="984" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="984" dy="0">Source / processing / gates</tspan>
+</text>
+<rect id="02-f64-import-aggregations-legend-chip-4" data-role="legend-chip" x="1390" y="920" width="22" height="22" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="02-f64-import-aggregations-legend-text-4" data-role="note" x="1424" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1424" dy="0">Reported issue / guard</tspan>
+</text>
+<text id="02-f64-import-aggregations-legend-flow" data-role="note" x="40" y="976" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Architecture arrows: solid = publication / summary path; dashed double arrows = on-demand queries and results. Inset lines show relationships.</tspan>
+</text>
+<text id="02-f64-import-aggregations-legend-assumptions" data-role="note" x="40" y="1006" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">* Reported / illustrative counts and 15-year coverage need confirmation. Assigned SKU and proposed memory targets are not measured here.</tspan>
 </text>
 </svg>

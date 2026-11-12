@@ -1,15 +1,15 @@
 {
   "type": "excalidraw",
   "version": 2,
-  "source": "local-architecture-authoring",
+  "source": "Cube-to-Fabric architecture renderer",
   "elements": [
     {
-      "id": "e181",
+      "id": "03-scale-fallback-frame",
       "type": "frame",
       "x": 0,
       "y": 0,
       "width": 1840,
-      "height": 830,
+      "height": 1060,
       "angle": 0,
       "strokeColor": "#495057",
       "backgroundColor": "transparent",
@@ -20,21 +20,24 @@
       "opacity": 100,
       "groupIds": [],
       "frameId": null,
-      "seed": 181,
+      "seed": 1,
       "version": 1,
-      "versionNonce": 181,
+      "versionNonce": 1,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "name": "Option 3 - LAST RESORT: scale only after F64 model-change tests fail"
+      "name": "Option 3 - LAST RESORT: scale only after F64 model-change tests fail",
+      "customData": {
+        "role": "frame"
+      }
     },
     {
-      "id": "e182",
+      "id": "03-scale-fallback-title",
       "type": "text",
-      "x": 35,
-      "y": 18,
+      "x": 40,
+      "y": 20,
       "width": 1760,
       "height": 75,
       "angle": 0,
@@ -46,10 +49,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 182,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 2,
       "version": 1,
-      "versionNonce": 182,
+      "versionNonce": 2,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -63,13 +66,16 @@
       "verticalAlign": "top",
       "containerId": null,
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "title"
+      }
     },
     {
-      "id": "e183",
+      "id": "03-scale-fallback-subtitle",
       "type": "text",
-      "x": 35,
-      "y": 76,
+      "x": 40,
+      "y": 78,
       "width": 1760,
       "height": 45,
       "angle": 0,
@@ -81,10 +87,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 183,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 3,
       "version": 1,
-      "versionNonce": 183,
+      "versionNonce": 3,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -92,21 +98,63 @@
       "locked": false,
       "fontSize": 18,
       "fontFamily": 2,
-      "text": "No semantic grain change. F128 cannot contain a 4B-row Direct Lake table; F256 can by row count, not automatically by memory or throughput.",
-      "originalText": "No semantic grain change. F128 cannot contain a 4B-row Direct Lake table; F256 can by row count, not automatically by memory or throughput.",
+      "text": "No grain change. F128 cannot hold a 4B-row Direct Lake table; F256 fits by row count, not automatically by memory or throughput.",
+      "originalText": "No grain change. F128 cannot hold a 4B-row Direct Lake table; F256 fits by row count, not automatically by memory or throughput.",
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
     },
     {
-      "id": "e184",
-      "type": "text",
+      "id": "03-scale-fallback-lane-0",
+      "type": "rectangle",
       "x": 40,
-      "y": 126,
-      "width": 330,
-      "height": 40,
+      "y": 135,
+      "width": 300,
+      "height": 52,
+      "angle": 0,
+      "strokeColor": "#CBD5E1",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 4,
+      "version": 1,
+      "versionNonce": 4,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "03-scale-fallback-lane-0-label"
+        }
+      ],
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "roundness": {
+        "type": 3
+      },
+      "customData": {
+        "role": "lane-header",
+        "mode": "neutral",
+        "lane": 0
+      }
+    },
+    {
+      "id": "03-scale-fallback-lane-0-label",
+      "type": "text",
+      "x": 56,
+      "y": 149.3,
+      "width": 268,
+      "height": 23.4,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -116,32 +164,74 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 184,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 5,
       "version": 1,
-      "versionNonce": 184,
+      "versionNonce": 5,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 16,
+      "fontSize": 18,
       "fontFamily": 2,
       "text": "SOURCE",
       "originalText": "SOURCE",
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "03-scale-fallback-lane-0",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e185",
+      "id": "03-scale-fallback-lane-1",
+      "type": "rectangle",
+      "x": 400,
+      "y": 135,
+      "width": 300,
+      "height": 52,
+      "angle": 0,
+      "strokeColor": "#CBD5E1",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 6,
+      "version": 1,
+      "versionNonce": 6,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "03-scale-fallback-lane-1-label"
+        }
+      ],
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "roundness": {
+        "type": 3
+      },
+      "customData": {
+        "role": "lane-header",
+        "mode": "neutral",
+        "lane": 1
+      }
+    },
+    {
+      "id": "03-scale-fallback-lane-1-label",
       "type": "text",
-      "x": 390,
-      "y": 126,
-      "width": 330,
-      "height": 40,
+      "x": 416,
+      "y": 149.3,
+      "width": 268,
+      "height": 23.4,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -151,32 +241,74 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 185,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 7,
       "version": 1,
-      "versionNonce": 185,
+      "versionNonce": 7,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 16,
+      "fontSize": 18,
       "fontFamily": 2,
       "text": "LANDING / PUBLICATION",
       "originalText": "LANDING / PUBLICATION",
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "03-scale-fallback-lane-1",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e186",
+      "id": "03-scale-fallback-lane-2",
+      "type": "rectangle",
+      "x": 760,
+      "y": 135,
+      "width": 300,
+      "height": 52,
+      "angle": 0,
+      "strokeColor": "#CBD5E1",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 8,
+      "version": 1,
+      "versionNonce": 8,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "03-scale-fallback-lane-2-label"
+        }
+      ],
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "roundness": {
+        "type": 3
+      },
+      "customData": {
+        "role": "lane-header",
+        "mode": "neutral",
+        "lane": 2
+      }
+    },
+    {
+      "id": "03-scale-fallback-lane-2-label",
       "type": "text",
-      "x": 740,
-      "y": 126,
-      "width": 330,
-      "height": 40,
+      "x": 776,
+      "y": 149.3,
+      "width": 268,
+      "height": 23.4,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -186,32 +318,74 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 186,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 9,
       "version": 1,
-      "versionNonce": 186,
+      "versionNonce": 9,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 16,
+      "fontSize": 18,
       "fontFamily": 2,
-      "text": "STORAGE",
-      "originalText": "STORAGE",
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
+      "text": "STORAGE / CACHE",
+      "originalText": "STORAGE / CACHE",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "03-scale-fallback-lane-2",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e187",
+      "id": "03-scale-fallback-lane-3",
+      "type": "rectangle",
+      "x": 1120,
+      "y": 135,
+      "width": 300,
+      "height": 52,
+      "angle": 0,
+      "strokeColor": "#CBD5E1",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 10,
+      "version": 1,
+      "versionNonce": 10,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "03-scale-fallback-lane-3-label"
+        }
+      ],
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "roundness": {
+        "type": 3
+      },
+      "customData": {
+        "role": "lane-header",
+        "mode": "neutral",
+        "lane": 3
+      }
+    },
+    {
+      "id": "03-scale-fallback-lane-3-label",
       "type": "text",
-      "x": 1090,
-      "y": 126,
-      "width": 330,
-      "height": 40,
+      "x": 1136,
+      "y": 149.3,
+      "width": 268,
+      "height": 23.4,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -221,32 +395,74 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 187,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 11,
       "version": 1,
-      "versionNonce": 187,
+      "versionNonce": 11,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 16,
+      "fontSize": 18,
       "fontFamily": 2,
       "text": "SEMANTIC MODEL",
       "originalText": "SEMANTIC MODEL",
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "03-scale-fallback-lane-3",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e188",
-      "type": "text",
+      "id": "03-scale-fallback-lane-4",
+      "type": "rectangle",
       "x": 1480,
-      "y": 126,
-      "width": 330,
-      "height": 40,
+      "y": 135,
+      "width": 300,
+      "height": 52,
+      "angle": 0,
+      "strokeColor": "#CBD5E1",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 12,
+      "version": 1,
+      "versionNonce": 12,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "03-scale-fallback-lane-4-label"
+        }
+      ],
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "roundness": {
+        "type": 3
+      },
+      "customData": {
+        "role": "lane-header",
+        "mode": "neutral",
+        "lane": 4
+      }
+    },
+    {
+      "id": "03-scale-fallback-lane-4-label",
+      "type": "text",
+      "x": 1496,
+      "y": 149.3,
+      "width": 268,
+      "height": 23.4,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -256,32 +472,35 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 188,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 13,
       "version": 1,
-      "versionNonce": 188,
+      "versionNonce": 13,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 16,
+      "fontSize": 18,
       "fontFamily": 2,
       "text": "CONSUMERS",
       "originalText": "CONSUMERS",
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "03-scale-fallback-lane-4",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e189",
+      "id": "03-scale-fallback-source",
       "type": "rectangle",
       "x": 40,
-      "y": 220,
-      "width": 290,
-      "height": 205,
+      "y": 210,
+      "width": 300,
+      "height": 220,
       "angle": 0,
       "strokeColor": "#495057",
       "backgroundColor": "#F3F2F1",
@@ -291,15 +510,19 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 189,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 14,
       "version": 1,
-      "versionNonce": 189,
+      "versionNonce": 14,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
-          "id": "e190"
+          "id": "03-scale-fallback-source-label"
+        },
+        {
+          "type": "arrow",
+          "id": "03-scale-fallback-source-to-copy"
         }
       ],
       "updated": 1,
@@ -307,14 +530,19 @@
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "primary",
+        "mode": "neutral",
+        "lane": 0
       }
     },
     {
-      "id": "e190",
+      "id": "03-scale-fallback-source-label",
       "type": "text",
-      "x": 54,
-      "y": 264,
-      "width": 262,
+      "x": 56,
+      "y": 261.5,
+      "width": 268,
       "height": 117,
       "angle": 0,
       "strokeColor": "#000000",
@@ -325,10 +553,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 190,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 15,
       "version": 1,
-      "versionNonce": 190,
+      "versionNonce": 15,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -336,21 +564,24 @@
       "locked": false,
       "fontSize": 18,
       "fontFamily": 2,
-      "text": "Snowflake on AWS\nSystem of record\nPolicy detail: 1.5B -> 4B\nAll 15y assumed\nCompute: Snowflake",
-      "originalText": "Snowflake on AWS\nSystem of record\nPolicy detail: 1.5B -> 4B\nAll 15y assumed\nCompute: Snowflake",
+      "text": "Snowflake on AWS\nSystem of record\nPolicy rows: 1.5B -> 4B*\nAll 15 years assumed*\nSource compute: Snowflake",
+      "originalText": "Snowflake on AWS\nSystem of record\nPolicy rows: 1.5B -> 4B*\nAll 15 years assumed*\nSource compute: Snowflake",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "e189",
+      "containerId": "03-scale-fallback-source",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e191",
+      "id": "03-scale-fallback-publication",
       "type": "rectangle",
-      "x": 390,
-      "y": 220,
-      "width": 290,
-      "height": 205,
+      "x": 400,
+      "y": 210,
+      "width": 300,
+      "height": 220,
       "angle": 0,
       "strokeColor": "#495057",
       "backgroundColor": "#F3F2F1",
@@ -360,15 +591,23 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 191,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 16,
       "version": 1,
-      "versionNonce": 191,
+      "versionNonce": 16,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
-          "id": "e192"
+          "id": "03-scale-fallback-publication-label"
+        },
+        {
+          "type": "arrow",
+          "id": "03-scale-fallback-source-to-copy"
+        },
+        {
+          "type": "arrow",
+          "id": "03-scale-fallback-copy-to-storage"
         }
       ],
       "updated": 1,
@@ -376,14 +615,19 @@
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "primary",
+        "mode": "neutral",
+        "lane": 1
       }
     },
     {
-      "id": "e192",
+      "id": "03-scale-fallback-publication-label",
       "type": "text",
-      "x": 404,
-      "y": 264,
-      "width": 262,
+      "x": 416,
+      "y": 261.5,
+      "width": 268,
       "height": 117,
       "angle": 0,
       "strokeColor": "#000000",
@@ -394,10 +638,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 192,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 17,
       "version": 1,
-      "versionNonce": 192,
+      "versionNonce": 17,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -405,21 +649,24 @@
       "locked": false,
       "fontSize": 18,
       "fontFamily": 2,
-      "text": "Existing pipeline copy\nDaily increments\nSame reliability exposure\nSame transfer / egress\nLarger-capacity jobs",
-      "originalText": "Existing pipeline copy\nDaily increments\nSame reliability exposure\nSame transfer / egress\nLarger-capacity jobs",
+      "text": "Existing pipeline copy\nDaily increments*\nSame reliability exposure\nSame transfer / egress\nNo ingestion redesign",
+      "originalText": "Existing pipeline copy\nDaily increments*\nSame reliability exposure\nSame transfer / egress\nNo ingestion redesign",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "e191",
+      "containerId": "03-scale-fallback-publication",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e193",
+      "id": "03-scale-fallback-detail-storage",
       "type": "rectangle",
-      "x": 740,
-      "y": 220,
-      "width": 290,
-      "height": 205,
+      "x": 760,
+      "y": 210,
+      "width": 300,
+      "height": 220,
       "angle": 0,
       "strokeColor": "#495057",
       "backgroundColor": "#F3F2F1",
@@ -429,15 +676,23 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 193,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 18,
       "version": 1,
-      "versionNonce": 193,
+      "versionNonce": 18,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
-          "id": "e194"
+          "id": "03-scale-fallback-detail-storage-label"
+        },
+        {
+          "type": "arrow",
+          "id": "03-scale-fallback-copy-to-storage"
+        },
+        {
+          "type": "arrow",
+          "id": "03-scale-fallback-storage-to-model"
         }
       ],
       "updated": 1,
@@ -445,14 +700,19 @@
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "primary",
+        "mode": "neutral",
+        "lane": 2
       }
     },
     {
-      "id": "e194",
+      "id": "03-scale-fallback-detail-storage-label",
       "type": "text",
-      "x": 754,
-      "y": 264,
-      "width": 262,
+      "x": 776,
+      "y": 261.5,
+      "width": 268,
       "height": 117,
       "angle": 0,
       "strokeColor": "#000000",
@@ -463,10 +723,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 194,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 19,
       "version": 1,
-      "versionNonce": 194,
+      "versionNonce": 19,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -474,39 +734,50 @@
       "locked": false,
       "fontSize": 18,
       "fontFamily": 2,
-      "text": "OneLake Delta detail\n1.5B -> 4B; 15y\nFull second detail copy\nNo grain change\nStorage still required",
-      "originalText": "OneLake Delta detail\n1.5B -> 4B; 15y\nFull second detail copy\nNo grain change\nStorage still required",
+      "text": "OneLake Delta detail\n1.5B -> 4B rows* / 15y*\nFull second detail copy\nNo grain change\nStorage still required",
+      "originalText": "OneLake Delta detail\n1.5B -> 4B rows* / 15y*\nFull second detail copy\nNo grain change\nStorage still required",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "e193",
+      "containerId": "03-scale-fallback-detail-storage",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e195",
+      "id": "03-scale-fallback-detail-model",
       "type": "rectangle",
-      "x": 1090,
-      "y": 220,
-      "width": 310,
-      "height": 205,
+      "x": 1120,
+      "y": 210,
+      "width": 300,
+      "height": 220,
       "angle": 0,
-      "strokeColor": "#495057",
-      "backgroundColor": "#F3F2F1",
+      "strokeColor": "#6F8DA9",
+      "backgroundColor": "#EEF3F8",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 195,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 20,
       "version": 1,
-      "versionNonce": 195,
+      "versionNonce": 20,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
-          "id": "e196"
+          "id": "03-scale-fallback-detail-model-label"
+        },
+        {
+          "type": "arrow",
+          "id": "03-scale-fallback-storage-to-model"
+        },
+        {
+          "type": "arrow",
+          "id": "03-scale-fallback-model-to-consumers"
         }
       ],
       "updated": 1,
@@ -514,14 +785,19 @@
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "primary",
+        "mode": "dl",
+        "lane": 3
       }
     },
     {
-      "id": "e196",
+      "id": "03-scale-fallback-detail-model-label",
       "type": "text",
-      "x": 1104,
-      "y": 264,
-      "width": 282,
+      "x": 1136,
+      "y": 261.5,
+      "width": 268,
       "height": 117,
       "angle": 0,
       "strokeColor": "#000000",
@@ -532,10 +808,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 196,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 21,
       "version": 1,
-      "versionNonce": 196,
+      "versionNonce": 21,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -543,21 +819,24 @@
       "locked": false,
       "fontSize": 18,
       "fontFamily": 2,
-      "text": "Single Direct Lake fact\nF128: 3B max; 50 GB\n4B fails on F128\nF256: 6B max; 100 GB\n4B leaves 2B margin",
-      "originalText": "Single Direct Lake fact\nF128: 3B max; 50 GB\n4B fails on F128\nF256: 6B max; 100 GB\n4B leaves 2B margin",
+      "text": "Single Direct Lake fact\nF128: 3B max; 50 GB\n4B fails on F128\nF256: 6B max; 100 GB\n4B leaves 2B row margin",
+      "originalText": "Single Direct Lake fact\nF128: 3B max; 50 GB\n4B fails on F128\nF256: 6B max; 100 GB\n4B leaves 2B row margin",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "e195",
+      "containerId": "03-scale-fallback-detail-model",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e197",
+      "id": "03-scale-fallback-consumers",
       "type": "rectangle",
       "x": 1480,
-      "y": 220,
+      "y": 210,
       "width": 300,
-      "height": 205,
+      "height": 220,
       "angle": 0,
       "strokeColor": "#495057",
       "backgroundColor": "#F3F2F1",
@@ -567,15 +846,19 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 197,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 22,
       "version": 1,
-      "versionNonce": 197,
+      "versionNonce": 22,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
-          "id": "e198"
+          "id": "03-scale-fallback-consumers-label"
+        },
+        {
+          "type": "arrow",
+          "id": "03-scale-fallback-model-to-consumers"
         }
       ],
       "updated": 1,
@@ -583,14 +866,19 @@
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "primary",
+        "mode": "neutral",
+        "lane": 4
       }
     },
     {
-      "id": "e198",
+      "id": "03-scale-fallback-consumers-label",
       "type": "text",
-      "x": 1494,
-      "y": 264,
-      "width": 272,
+      "x": 1496,
+      "y": 261.5,
+      "width": 268,
       "height": 117,
       "angle": 0,
       "strokeColor": "#000000",
@@ -601,10 +889,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 198,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 23,
       "version": 1,
-      "versionNonce": 198,
+      "versionNonce": 23,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -612,20 +900,23 @@
       "locked": false,
       "fontSize": 18,
       "fontFamily": 2,
-      "text": "Power BI + Excel\nSame DL / MDX limits\nNo modelling guidance\ndelivered by scaling alone\nAll 15y policy grain",
-      "originalText": "Power BI + Excel\nSame DL / MDX limits\nNo modelling guidance\ndelivered by scaling alone\nAll 15y policy grain",
+      "text": "Power BI + Excel\nSame DL / MDX limits\nAll 15y at policy grain*\nScaling does not redesign\nor restore cube features",
+      "originalText": "Power BI + Excel\nSame DL / MDX limits\nAll 15y at policy grain*\nScaling does not redesign\nor restore cube features",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "e197",
+      "containerId": "03-scale-fallback-consumers",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e199",
+      "id": "03-scale-fallback-source-to-copy",
       "type": "arrow",
-      "x": 335,
-      "y": 325,
-      "width": 50,
+      "x": 348,
+      "y": 320,
+      "width": 44,
       "height": 0,
       "angle": 0,
       "strokeColor": "#495057",
@@ -636,10 +927,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 199,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 24,
       "version": 1,
-      "versionNonce": 199,
+      "versionNonce": 24,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -651,22 +942,34 @@
           0
         ],
         [
-          50,
+          44,
           0
         ]
       ],
-      "startBinding": null,
-      "endBinding": null,
+      "startBinding": {
+        "elementId": "03-scale-fallback-source",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "03-scale-fallback-publication",
+        "focus": 0,
+        "gap": 8
+      },
       "startArrowhead": null,
       "endArrowhead": "arrow",
-      "elbowed": false
+      "elbowed": false,
+      "customData": {
+        "role": "connector",
+        "mode": "neutral"
+      }
     },
     {
-      "id": "e200",
+      "id": "03-scale-fallback-copy-to-storage",
       "type": "arrow",
-      "x": 685,
-      "y": 325,
-      "width": 50,
+      "x": 708,
+      "y": 320,
+      "width": 44,
       "height": 0,
       "angle": 0,
       "strokeColor": "#495057",
@@ -677,10 +980,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 200,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 25,
       "version": 1,
-      "versionNonce": 200,
+      "versionNonce": 25,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -692,25 +995,37 @@
           0
         ],
         [
-          50,
+          44,
           0
         ]
       ],
-      "startBinding": null,
-      "endBinding": null,
+      "startBinding": {
+        "elementId": "03-scale-fallback-publication",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "03-scale-fallback-detail-storage",
+        "focus": 0,
+        "gap": 8
+      },
       "startArrowhead": null,
       "endArrowhead": "arrow",
-      "elbowed": false
+      "elbowed": false,
+      "customData": {
+        "role": "connector",
+        "mode": "neutral"
+      }
     },
     {
-      "id": "e201",
+      "id": "03-scale-fallback-storage-to-model",
       "type": "arrow",
-      "x": 1035,
-      "y": 325,
-      "width": 50,
+      "x": 1068,
+      "y": 320,
+      "width": 44,
       "height": 0,
       "angle": 0,
-      "strokeColor": "#495057",
+      "strokeColor": "#0078D4",
       "backgroundColor": "transparent",
       "fillStyle": "solid",
       "strokeWidth": 2,
@@ -718,10 +1033,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 201,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 26,
       "version": 1,
-      "versionNonce": 201,
+      "versionNonce": 26,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -733,25 +1048,37 @@
           0
         ],
         [
-          50,
+          44,
           0
         ]
       ],
-      "startBinding": null,
-      "endBinding": null,
+      "startBinding": {
+        "elementId": "03-scale-fallback-detail-storage",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "03-scale-fallback-detail-model",
+        "focus": 0,
+        "gap": 8
+      },
       "startArrowhead": null,
       "endArrowhead": "arrow",
-      "elbowed": false
+      "elbowed": false,
+      "customData": {
+        "role": "connector",
+        "mode": "dl"
+      }
     },
     {
-      "id": "e202",
+      "id": "03-scale-fallback-model-to-consumers",
       "type": "arrow",
-      "x": 1405,
-      "y": 325,
-      "width": 70,
+      "x": 1428,
+      "y": 320,
+      "width": 44,
       "height": 0,
       "angle": 0,
-      "strokeColor": "#495057",
+      "strokeColor": "#0078D4",
       "backgroundColor": "transparent",
       "fillStyle": "solid",
       "strokeWidth": 2,
@@ -759,10 +1086,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 202,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 27,
       "version": 1,
-      "versionNonce": 202,
+      "versionNonce": 27,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -774,23 +1101,35 @@
           0
         ],
         [
-          70,
+          44,
           0
         ]
       ],
-      "startBinding": null,
-      "endBinding": null,
+      "startBinding": {
+        "elementId": "03-scale-fallback-detail-model",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "03-scale-fallback-consumers",
+        "focus": 0,
+        "gap": 8
+      },
       "startArrowhead": null,
       "endArrowhead": "arrow",
-      "elbowed": false
+      "elbowed": false,
+      "customData": {
+        "role": "connector",
+        "mode": "dl"
+      }
     },
     {
-      "id": "e203",
+      "id": "03-scale-fallback-fallback-gate",
       "type": "rectangle",
-      "x": 390,
-      "y": 500,
-      "width": 1010,
-      "height": 135,
+      "x": 400,
+      "y": 510,
+      "width": 1020,
+      "height": 170,
       "angle": 0,
       "strokeColor": "#495057",
       "backgroundColor": "#F3F2F1",
@@ -800,15 +1139,15 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 203,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 28,
       "version": 1,
-      "versionNonce": 203,
+      "versionNonce": 28,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
-          "id": "e204"
+          "id": "03-scale-fallback-fallback-gate-label"
         }
       ],
       "updated": 1,
@@ -816,14 +1155,18 @@
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "callout",
+        "mode": "neutral"
       }
     },
     {
-      "id": "e204",
+      "id": "03-scale-fallback-fallback-gate-label",
       "type": "text",
-      "x": 404,
-      "y": 520.7,
-      "width": 982,
+      "x": 416,
+      "y": 548.2,
+      "width": 988,
       "height": 93.6,
       "angle": 0,
       "strokeColor": "#000000",
@@ -834,10 +1177,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 204,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 29,
       "version": 1,
-      "versionNonce": 204,
+      "versionNonce": 29,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -845,21 +1188,24 @@
       "locked": false,
       "fontSize": 18,
       "fontFamily": 2,
-      "text": "JUSTIFY ONLY WITH EVIDENCE\nOption 1: required summary grain, limited relationships or Excel tests fail after tuning.\nOption 2: required grain cannot fit Import/refresh budget or critical queries cannot hit aggregates.\nBoth must fail agreed SLAs; rule out Snowflake/network/copy bottlenecks before buying capacity.",
-      "originalText": "JUSTIFY ONLY WITH EVIDENCE\nOption 1: required summary grain, limited relationships or Excel tests fail after tuning.\nOption 2: required grain cannot fit Import/refresh budget or critical queries cannot hit aggregates.\nBoth must fail agreed SLAs; rule out Snowflake/network/copy bottlenecks before buying capacity.",
+      "text": "GATED FALLBACK - EVIDENCE REQUIRED\nOption 1: required grain, limited relationships or Excel tests still fail after tuning.\nOption 2: required cache / refresh cannot fit, or critical queries cannot hit aggregates.\nBoth must fail agreed criteria for a capacity-solvable reason; a stuck copy is not one.",
+      "originalText": "GATED FALLBACK - EVIDENCE REQUIRED\nOption 1: required grain, limited relationships or Excel tests still fail after tuning.\nOption 2: required cache / refresh cannot fit, or critical queries cannot hit aggregates.\nBoth must fail agreed criteria for a capacity-solvable reason; a stuck copy is not one.",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "e203",
+      "containerId": "03-scale-fallback-fallback-gate",
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "bound-label"
+      }
     },
     {
-      "id": "e205",
+      "id": "03-scale-fallback-first-test",
       "type": "text",
       "x": 40,
-      "y": 675,
-      "width": 1740,
-      "height": 45,
+      "y": 770,
+      "width": 1760,
+      "height": 90,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -869,10 +1215,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 205,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 30,
       "version": 1,
-      "versionNonce": 205,
+      "versionNonce": 30,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -880,21 +1226,24 @@
       "locked": false,
       "fontSize": 18,
       "fontFamily": 2,
-      "text": "FIRST TEST: only after Options 1 and 2 fail, propose a separate synthetic sandbox benchmark and seek approval. No resource changes were made.",
-      "originalText": "FIRST TEST: only after Options 1 and 2 fail, propose a separate synthetic sandbox benchmark and seek approval. No resource changes were made.",
+      "text": "FIRST TEST: only after both F64 patterns fail, propose an approved synthetic sandbox benchmark on the larger SKU.\nNo scale-up or tenant inspection was performed; check working set, throughput and other workload occupancy.",
+      "originalText": "FIRST TEST: only after both F64 patterns fail, propose an approved synthetic sandbox benchmark on the larger SKU.\nNo scale-up or tenant inspection was performed; check working set, throughput and other workload occupancy.",
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
     },
     {
-      "id": "e206",
+      "id": "03-scale-fallback-legend-chip-0",
       "type": "rectangle",
       "x": 40,
-      "y": 745,
-      "width": 270,
-      "height": 55,
+      "y": 920,
+      "width": 22,
+      "height": 22,
       "angle": 0,
       "strokeColor": "#0078D4",
       "backgroundColor": "#CFE4FA",
@@ -904,31 +1253,29 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 206,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 31,
       "version": 1,
-      "versionNonce": 206,
+      "versionNonce": 31,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "e207"
-        }
-      ],
+      "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "legend-chip"
       }
     },
     {
-      "id": "e207",
+      "id": "03-scale-fallback-legend-text-0",
       "type": "text",
-      "x": 54,
-      "y": 760.8,
-      "width": 242,
-      "height": 23.4,
+      "x": 74,
+      "y": 919,
+      "width": 380,
+      "height": 40,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -938,32 +1285,35 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 207,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 32,
       "version": 1,
-      "versionNonce": 207,
+      "versionNonce": 32,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 18,
+      "fontSize": 16,
       "fontFamily": 2,
-      "text": "Direct Lake on OneLake",
-      "originalText": "Direct Lake on OneLake",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "e206",
+      "text": "Direct Lake",
+      "originalText": "Direct Lake",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
     },
     {
-      "id": "e208",
+      "id": "03-scale-fallback-legend-chip-1",
       "type": "rectangle",
       "x": 330,
-      "y": 745,
-      "width": 260,
-      "height": 55,
+      "y": 920,
+      "width": 22,
+      "height": 22,
       "angle": 0,
       "strokeColor": "#5C2D91",
       "backgroundColor": "#E8DAEF",
@@ -973,31 +1323,29 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 208,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 33,
       "version": 1,
-      "versionNonce": 208,
+      "versionNonce": 33,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "e209"
-        }
-      ],
+      "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "legend-chip"
       }
     },
     {
-      "id": "e209",
+      "id": "03-scale-fallback-legend-text-1",
       "type": "text",
-      "x": 344,
-      "y": 760.8,
-      "width": 232,
-      "height": 23.4,
+      "x": 364,
+      "y": 919,
+      "width": 380,
+      "height": 40,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -1007,32 +1355,35 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 209,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 34,
       "version": 1,
-      "versionNonce": 209,
+      "versionNonce": 34,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 18,
+      "fontSize": 16,
       "fontFamily": 2,
-      "text": "Import / Dual cache",
-      "originalText": "Import / Dual cache",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "e208",
+      "text": "Import / Dual",
+      "originalText": "Import / Dual",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
     },
     {
-      "id": "e210",
+      "id": "03-scale-fallback-legend-chip-2",
       "type": "rectangle",
-      "x": 610,
-      "y": 745,
-      "width": 270,
-      "height": 55,
+      "x": 650,
+      "y": 920,
+      "width": 22,
+      "height": 22,
       "angle": 0,
       "strokeColor": "#F7630C",
       "backgroundColor": "#FFF4CE",
@@ -1042,31 +1393,29 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 210,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 35,
       "version": 1,
-      "versionNonce": 210,
+      "versionNonce": 35,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "e211"
-        }
-      ],
+      "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
       "roundness": {
         "type": 3
+      },
+      "customData": {
+        "role": "legend-chip"
       }
     },
     {
-      "id": "e211",
+      "id": "03-scale-fallback-legend-text-2",
       "type": "text",
-      "x": 624,
-      "y": 760.8,
-      "width": 242,
-      "height": 23.4,
+      "x": 684,
+      "y": 919,
+      "width": 380,
+      "height": 40,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -1076,32 +1425,35 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 211,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 36,
       "version": 1,
-      "versionNonce": 211,
+      "versionNonce": 36,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 18,
+      "fontSize": 16,
       "fontFamily": 2,
-      "text": "DirectQuery (explicit)",
-      "originalText": "DirectQuery (explicit)",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "e210",
+      "text": "DirectQuery",
+      "originalText": "DirectQuery",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
     },
     {
-      "id": "e212",
+      "id": "03-scale-fallback-legend-chip-3",
       "type": "rectangle",
-      "x": 900,
-      "y": 745,
-      "width": 270,
-      "height": 55,
+      "x": 950,
+      "y": 920,
+      "width": 22,
+      "height": 22,
       "angle": 0,
       "strokeColor": "#495057",
       "backgroundColor": "#F3F2F1",
@@ -1111,66 +1463,29 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 212,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 37,
       "version": 1,
-      "versionNonce": 212,
-      "isDeleted": false,
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "e213"
-        }
-      ],
-      "updated": 1,
-      "link": null,
-      "locked": false,
-      "roundness": {
-        "type": 3
-      }
-    },
-    {
-      "id": "e213",
-      "type": "text",
-      "x": 914,
-      "y": 760.8,
-      "width": 242,
-      "height": 23.4,
-      "angle": 0,
-      "strokeColor": "#000000",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 0,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": "e181",
-      "seed": 213,
-      "version": 1,
-      "versionNonce": 213,
+      "versionNonce": 37,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
       "link": null,
       "locked": false,
-      "fontSize": 18,
-      "fontFamily": 2,
-      "text": "Source / orchestration",
-      "originalText": "Source / orchestration",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "e212",
-      "lineHeight": 1.3,
-      "autoResize": false
+      "roundness": {
+        "type": 3
+      },
+      "customData": {
+        "role": "legend-chip"
+      }
     },
     {
-      "id": "e214",
+      "id": "03-scale-fallback-legend-text-3",
       "type": "text",
-      "x": 1200,
-      "y": 749,
-      "width": 600,
-      "height": 80,
+      "x": 984,
+      "y": 919,
+      "width": 380,
+      "height": 40,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
@@ -1180,10 +1495,10 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "frameId": "e181",
-      "seed": 214,
+      "frameId": "03-scale-fallback-frame",
+      "seed": 38,
       "version": 1,
-      "versionNonce": 214,
+      "versionNonce": 38,
       "isDeleted": false,
       "boundElements": null,
       "updated": 1,
@@ -1191,13 +1506,162 @@
       "locked": false,
       "fontSize": 16,
       "fontFamily": 2,
-      "text": "All 15 years retained: requirement TO CONFIRM.\nCounts / cardinalities are design assumptions.",
-      "originalText": "All 15 years retained: requirement TO CONFIRM.\nCounts / cardinalities are design assumptions.",
+      "text": "Source / processing / gates",
+      "originalText": "Source / processing / gates",
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
       "lineHeight": 1.3,
-      "autoResize": false
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
+    },
+    {
+      "id": "03-scale-fallback-legend-chip-4",
+      "type": "rectangle",
+      "x": 1390,
+      "y": 920,
+      "width": 22,
+      "height": 22,
+      "angle": 0,
+      "strokeColor": "#D13438",
+      "backgroundColor": "#FDE7E9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 39,
+      "version": 1,
+      "versionNonce": 39,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "roundness": {
+        "type": 3
+      },
+      "customData": {
+        "role": "legend-chip"
+      }
+    },
+    {
+      "id": "03-scale-fallback-legend-text-4",
+      "type": "text",
+      "x": 1424,
+      "y": 919,
+      "width": 380,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 40,
+      "version": 1,
+      "versionNonce": 40,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "text": "Reported issue / guard",
+      "originalText": "Reported issue / guard",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
+    },
+    {
+      "id": "03-scale-fallback-legend-flow",
+      "type": "text",
+      "x": 40,
+      "y": 960,
+      "width": 1760,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 41,
+      "version": 1,
+      "versionNonce": 41,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "text": "Architecture arrows: solid = publication / summary path; dashed double arrows = on-demand queries and results. Inset lines show relationships.",
+      "originalText": "Architecture arrows: solid = publication / summary path; dashed double arrows = on-demand queries and results. Inset lines show relationships.",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
+    },
+    {
+      "id": "03-scale-fallback-legend-assumptions",
+      "type": "text",
+      "x": 40,
+      "y": 990,
+      "width": 1760,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "03-scale-fallback-frame",
+      "seed": 42,
+      "version": 1,
+      "versionNonce": 42,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "text": "* Reported / illustrative counts and 15-year coverage need confirmation. Assigned SKU and proposed memory targets are not measured here.",
+      "originalText": "* Reported / illustrative counts and 15-year coverage need confirmation. Assigned SKU and proposed memory targets are not measured here.",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "customData": {
+        "role": "note"
+      }
     }
   ],
   "appState": {

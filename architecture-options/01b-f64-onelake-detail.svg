@@ -1,147 +1,175 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1280" viewBox="0 0 1840 1280" role="img" aria-label="Option 1b - F64 summary model; copied detail in OneLake">
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#495057"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1660" viewBox="0 0 1840 1660" role="img" aria-labelledby="01b-f64-onelake-detail-title">
+<defs>
+<marker id="dl-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#0078D4"/></marker>
+<marker id="imp-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#5C2D91"/></marker>
+<marker id="dq-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#F7630C"/></marker>
+<marker id="neutral-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#495057"/></marker>
+<marker id="issue-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#D13438"/></marker>
+</defs>
 <rect width="100%" height="100%" fill="white"/>
-<text x="35" y="48" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Option 1b - F64 summary model; copied detail in OneLake</tspan>
+<text id="01b-f64-onelake-detail-title" data-role="title" x="40" y="50" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Option 1b - F64 summary model; copied detail in OneLake</tspan>
 </text>
-<text x="35" y="94" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Same composite model. Direct Lake aggregates; policy fact explicitly DirectQuery through the SQL analytics endpoint.</tspan>
+<text id="01b-f64-onelake-detail-subtitle" data-role="note" x="40" y="96" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">One XMLA composite model: Direct Lake on OneLake summaries plus explicit DirectQuery through the SQL analytics endpoint.</tspan>
 </text>
-<text x="40" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="40" dy="0">SOURCE</tspan>
+<rect id="01b-f64-onelake-detail-lane-0" data-role="lane-header" x="40" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-lane-0-label" data-role="bound-label" data-container="01b-f64-onelake-detail-lane-0" x="190" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">SOURCE</tspan>
 </text>
-<text x="390" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="390" dy="0">LANDING / PUBLICATION</tspan>
+<rect id="01b-f64-onelake-detail-lane-1" data-role="lane-header" x="400" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-lane-1-label" data-role="bound-label" data-container="01b-f64-onelake-detail-lane-1" x="550" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">LANDING / PUBLICATION</tspan>
 </text>
-<text x="740" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="740" dy="0">STORAGE</tspan>
+<rect id="01b-f64-onelake-detail-lane-2" data-role="lane-header" x="760" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-lane-2-label" data-role="bound-label" data-container="01b-f64-onelake-detail-lane-2" x="910" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">STORAGE / CACHE</tspan>
 </text>
-<text x="1090" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1090" dy="0">SEMANTIC MODEL</tspan>
+<rect id="01b-f64-onelake-detail-lane-3" data-role="lane-header" x="1120" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-lane-3-label" data-role="bound-label" data-container="01b-f64-onelake-detail-lane-3" x="1270" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">SEMANTIC MODEL</tspan>
 </text>
-<text x="1480" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1480" dy="0">CONSUMERS</tspan>
+<rect id="01b-f64-onelake-detail-lane-4" data-role="lane-header" x="1480" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-lane-4-label" data-role="bound-label" data-container="01b-f64-onelake-detail-lane-4" x="1630" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">CONSUMERS</tspan>
 </text>
-<rect x="40" y="200" width="290" height="190" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="185" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="185" dy="0">Snowflake on AWS</tspan>
-<tspan x="185" dy="23.400000000000002">System of record</tspan>
-<tspan x="185" dy="23.400000000000002">Policy detail: 1.5B -&gt; 4B</tspan>
-<tspan x="185" dy="23.400000000000002">All 15y assumed</tspan>
-<tspan x="185" dy="23.400000000000002">Compute: Snowflake</tspan>
+<rect id="01b-f64-onelake-detail-model-boundary" data-role="container" x="1106" y="196" width="328" height="538" rx="10" fill="transparent" stroke="#94A3B8" stroke-width="2" stroke-dasharray="7 5"/>
+<rect id="01b-f64-onelake-detail-source" data-role="primary" x="40" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-source-label" data-role="bound-label" data-container="01b-f64-onelake-detail-source" x="190" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">Snowflake on AWS</tspan>
+<tspan x="190" dy="23.4">System of record</tspan>
+<tspan x="190" dy="23.4">Policy rows: 1.5B -&gt; 4B*</tspan>
+<tspan x="190" dy="23.4">All 15 years assumed*</tspan>
+<tspan x="190" dy="23.4">Source compute: Snowflake</tspan>
 </text>
-<rect x="390" y="200" width="290" height="190" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="535" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="535" dy="0">Daily pipeline copy</tspan>
-<tspan x="535" dy="23.400000000000002">Detail + dimensions</tspan>
-<tspan x="535" dy="23.400000000000002">1.5B -&gt; 4B initial load</tspan>
-<tspan x="535" dy="23.400000000000002">~30M new rows / month</tspan>
-<tspan x="535" dy="23.400000000000002">Runs on F64</tspan>
+<rect id="01b-f64-onelake-detail-publication" data-role="primary" x="400" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-publication-label" data-role="bound-label" data-container="01b-f64-onelake-detail-publication" x="550" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">Initial detail backfill</tspan>
+<tspan x="550" dy="23.4">Then daily incremental copy</tspan>
+<tspan x="550" dy="23.4">~30M new rows / month*</tspan>
+<tspan x="550" dy="23.4">Detail + dimension updates</tspan>
+<tspan x="550" dy="23.4">Fabric jobs: F64</tspan>
 </text>
-<rect x="740" y="200" width="290" height="190" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="885" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="885" dy="0">OneLake Delta DETAIL</tspan>
-<tspan x="885" dy="23.400000000000002">1.5B -&gt; 4B; 15y</tspan>
-<tspan x="885" dy="23.400000000000002">Second detail estate</tspan>
-<tspan x="885" dy="23.400000000000002">SQL endpoint query path</tspan>
-<tspan x="885" dy="23.400000000000002">Fabric compute: F64</tspan>
+<rect id="01b-f64-onelake-detail-detail-storage" data-role="primary" x="760" y="210" width="300" height="220" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-detail-storage-label" data-role="bound-label" data-container="01b-f64-onelake-detail-detail-storage" x="910" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">OneLake Delta detail</tspan>
+<tspan x="910" dy="23.4">1.5B -&gt; 4B rows* / 15y*</tspan>
+<tspan x="910" dy="23.4">Second detail estate</tspan>
+<tspan x="910" dy="23.4">SQL analytics endpoint</tspan>
+<tspan x="910" dy="23.4">DQ compute shares F64</tspan>
 </text>
-<rect x="1090" y="200" width="310" height="190" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="1245" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1245" dy="0">Composite model - F64</tspan>
-<tspan x="1245" dy="23.400000000000002">Policy fact: DirectQuery</tspan>
-<tspan x="1245" dy="23.400000000000002">SQL endpoint runs on F64</tspan>
-<tspan x="1245" dy="23.400000000000002">No DL row guard on DQ</tspan>
-<tspan x="1245" dy="23.400000000000002">Shared Import dimensions</tspan>
+<rect id="01b-f64-onelake-detail-detail-model" data-role="primary" x="1120" y="210" width="300" height="220" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-detail-model-label" data-role="bound-label" data-container="01b-f64-onelake-detail-detail-model" x="1270" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">F64 model - policy fact</tspan>
+<tspan x="1270" dy="23.4">DQ via SQL endpoint</tspan>
+<tspan x="1270" dy="23.4">Shared Import dimensions</tspan>
+<tspan x="1270" dy="23.4">Filtered Policy measures</tspan>
+<tspan x="1270" dy="23.4">25 GB/model upper bound</tspan>
 </text>
-<rect x="1480" y="200" width="300" height="190" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1630" y="254.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<rect id="01b-f64-onelake-detail-consumers" data-role="primary" x="1480" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-consumers-label" data-role="bound-label" data-container="01b-f64-onelake-detail-consumers" x="1630" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
 <tspan x="1630" dy="0">Power BI + Excel</tspan>
-<tspan x="1630" dy="23.400000000000002">Summary / policy measures</tspan>
-<tspan x="1630" dy="23.400000000000002">All 15y available</tspan>
-<tspan x="1630" dy="23.400000000000002">Filtered policy pivot</tspan>
-<tspan x="1630" dy="23.400000000000002">No auto aggregate routing</tspan>
+<tspan x="1630" dy="23.4">Summary / Policy measures</tspan>
+<tspan x="1630" dy="23.4">All 15y available*</tspan>
+<tspan x="1630" dy="23.4">Separate filtered Policy pivot</tspan>
+<tspan x="1630" dy="23.4">No auto aggregate routing</tspan>
 </text>
-<path d="M335,295 L385,295" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M685,295 L735,295" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1035,295 L1085,295" fill="none" stroke="#F7630C" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1405,295 L1475,295" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<rect x="740" y="460" width="290" height="145" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="885" y="492" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="885" dy="0">OneLake Delta SUMMARY</tspan>
-<tspan x="885" dy="23.400000000000002">Daily/monthly Spark tables</tspan>
-<tspan x="885" dy="23.400000000000002">36M monthly rows; 15y</tspan>
-<tspan x="885" dy="23.400000000000002">SQL MLV optional: core GA</tspan>
-<tspan x="885" dy="23.400000000000002">Build + storage: F64</tspan>
+<path id="01b-f64-onelake-detail-source-to-copy" data-role="connector" data-start="01b-f64-onelake-detail-source" data-end="01b-f64-onelake-detail-publication" d="M348,320 L392,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="01b-f64-onelake-detail-copy-to-detail" data-role="connector" data-start="01b-f64-onelake-detail-publication" data-end="01b-f64-onelake-detail-detail-storage" d="M708,320 L752,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="01b-f64-onelake-detail-detail-to-model" data-role="connector" data-start="01b-f64-onelake-detail-detail-storage" data-end="01b-f64-onelake-detail-detail-model" d="M1068,320 L1112,320" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-start="url(#dq-arrow)" marker-end="url(#dq-arrow)"/>
+<path id="01b-f64-onelake-detail-policy-to-consumers" data-role="connector" data-start="01b-f64-onelake-detail-detail-model" data-end="01b-f64-onelake-detail-consumers" d="M1428,320 L1472,320" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-start="url(#dq-arrow)" marker-end="url(#dq-arrow)"/>
+<rect id="01b-f64-onelake-detail-summary-storage" data-role="node" x="760" y="530" width="300" height="190" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-summary-storage-label" data-role="bound-label" data-container="01b-f64-onelake-detail-summary-storage" x="910" y="584.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">Physical Delta summary</tspan>
+<tspan x="910" dy="23.4">15y monthly: 36M rows*</tspan>
+<tspan x="910" dy="23.4">Spark or SQL MLV (core GA)</tspan>
+<tspan x="910" dy="23.4">Preview features not required</tspan>
+<tspan x="910" dy="23.4">Build compute: F64</tspan>
 </text>
-<rect x="1090" y="460" width="310" height="145" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="1245" y="492" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1245" dy="0">Same F64 model</tspan>
-<tspan x="1245" dy="23.400000000000002">Aggregate: Direct Lake</tspan>
-<tspan x="1245" dy="23.400000000000002">1.464B row headroom</tspan>
-<tspan x="1245" dy="23.400000000000002">&lt;25 GB measured budget</tspan>
-<tspan x="1245" dy="23.400000000000002">Explicit summary measures</tspan>
+<rect id="01b-f64-onelake-detail-summary-model" data-role="node" x="1120" y="530" width="300" height="190" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-summary-model-label" data-role="bound-label" data-container="01b-f64-onelake-detail-summary-model" x="1270" y="584.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">Same model - summary fact</tspan>
+<tspan x="1270" dy="23.4">Direct Lake on OneLake</tspan>
+<tspan x="1270" dy="23.4">Explicit Summary measures</tspan>
+<tspan x="1270" dy="23.4">Target peak &lt;=20 GB*</tspan>
+<tspan x="1270" dy="23.4">1.464B row headroom*</tspan>
 </text>
-<path d="M885,395 L885,455" fill="none" stroke="#0078D4" stroke-width="2"  marker-end="url(#arrow)"/>
-<text x="895" y="362" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
-<tspan x="895" dy="0">Derive</tspan>
+<path id="01b-f64-onelake-detail-build-summary" data-role="connector" data-start="01b-f64-onelake-detail-detail-storage" data-end="01b-f64-onelake-detail-summary-storage" d="M910,438 L910,522" fill="none" stroke="#0078D4" stroke-width="2" marker-end="url(#dl-arrow)"/>
+<text id="01b-f64-onelake-detail-build-label" data-role="note" x="935" y="482" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
+<tspan x="935" dy="0">Build Delta</tspan>
 </text>
-<path d="M1035,535 L1085,535" fill="none" stroke="#0078D4" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1405,535 L1630,395" fill="none" stroke="#0078D4" stroke-width="2"  marker-end="url(#arrow)"/>
-<text x="40" y="658" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="40" dy="0">FIRST TEST: copy completion -&gt; SQL endpoint visibility -&gt; aggregate build -&gt; Import dimension refresh -&gt; reframe; run detail queries during summary load.</tspan>
+<path id="01b-f64-onelake-detail-summary-to-model" data-role="connector" data-start="01b-f64-onelake-detail-summary-storage" data-end="01b-f64-onelake-detail-summary-model" d="M1068,625 L1112,625" fill="none" stroke="#0078D4" stroke-width="2" marker-end="url(#dl-arrow)"/>
+<path id="01b-f64-onelake-detail-summary-to-consumers" data-role="connector" data-start="01b-f64-onelake-detail-summary-model" data-end="01b-f64-onelake-detail-consumers" d="M1428,625 L1630,625 L1630,438" fill="none" stroke="#0078D4" stroke-width="2" marker-end="url(#dl-arrow)"/>
+<text id="01b-f64-onelake-detail-summary-consumer-label" data-role="note" x="1480" y="677" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
+<tspan x="1480" dy="0">Summary measures / pivots</tspan>
 </text>
-<text x="40" y="723" font-family="Arial, sans-serif" font-size="23" fill="black" text-anchor="start">
-<tspan x="40" dy="0">Semantic model inset: shared dimensions, separate summary and policy measures</tspan>
+<text id="01b-f64-onelake-detail-first-test" data-role="note" x="40" y="788" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">FIRST TEST: copy completion -&gt; SQL visibility -&gt; aggregate build -&gt; Import dimension refresh -&gt; reframe.</tspan>
+<tspan x="40" dy="23.4">Run detail SQL and summary queries during refresh: copy reliability, SQL/Spark contention and memory remain test gates.</tspan>
 </text>
-<rect x="600" y="780" width="600" height="125" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="900" y="825.4" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="900" dy="0">Shared conformed dimensions - Import (preferred)</tspan>
-<tspan x="900" dy="23.400000000000002">Month, State, Product, Coverage, Channel, Segment</tspan>
-<tspan x="900" dy="23.400000000000002">Unique integer keys; hierarchies for Excel; daily refresh</tspan>
+<text id="01b-f64-onelake-detail-inset-title" data-role="note" x="40" y="888" font-family="Arial, sans-serif" font-size="23" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Semantic model inset - one model, shared dimensions, separate facts</tspan>
 </text>
-<rect x="65" y="960" width="650" height="140" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="390" y="1012.9" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="390" dy="0">Aggregate fact - Direct Lake on OneLake</tspan>
-<tspan x="390" dy="23.400000000000002">180 months x 200,000 combinations = 36M rows</tspan>
-<tspan x="390" dy="23.400000000000002">15y; F64; measures explicitly use this table</tspan>
+<rect id="01b-f64-onelake-detail-dimensions" data-role="node" x="60" y="1030" width="500" height="180" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-dimensions-label" data-role="bound-label" data-container="01b-f64-onelake-detail-dimensions" x="310" y="1079.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="310" dy="0">Shared dimensions - Import</tspan>
+<tspan x="310" dy="23.4">Month / State / Product</tspan>
+<tspan x="310" dy="23.4">Coverage / Channel / Segment</tspan>
+<tspan x="310" dy="23.4">Unique integer keys; 1-side</tspan>
+<tspan x="310" dy="23.4">Excel hierarchies supported</tspan>
 </text>
-<rect x="1090" y="960" width="650" height="140" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="1415" y="1012.9" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1415" dy="0">Policy fact - DirectQuery to SQL endpoint</tspan>
-<tspan x="1415" dy="23.400000000000002">1.5B now -&gt; 4B target; 15y assumed</tspan>
-<tspan x="1415" dy="23.400000000000002">Policy measures / filtered investigation only</tspan>
+<rect id="01b-f64-onelake-detail-aggregate-fact" data-role="node" x="900" y="960" width="880" height="150" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-aggregate-fact-label" data-role="bound-label" data-container="01b-f64-onelake-detail-aggregate-fact" x="1340" y="1006.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1340" dy="0">Aggregate fact - Direct Lake on OneLake</tspan>
+<tspan x="1340" dy="23.4">180 months x 200,000 combinations = 36M rows*</tspan>
+<tspan x="1340" dy="23.4">15-year monthly summary on F64*</tspan>
+<tspan x="1340" dy="23.4">Explicit Summary measures</tspan>
 </text>
-<path d="M690,905 L400,955" fill="none" stroke="#0078D4" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1120,905 L1410,955" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
-<text x="85" y="926" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="85" dy="0">1:* regular; same source group</tspan>
+<rect id="01b-f64-onelake-detail-policy-fact" data-role="node" x="900" y="1190" width="880" height="150" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-policy-fact-label" data-role="bound-label" data-container="01b-f64-onelake-detail-policy-fact" x="1340" y="1236.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1340" dy="0">Policy fact - DirectQuery to SQL endpoint</tspan>
+<tspan x="1340" dy="23.4">Policy rows: 1.5B now -&gt; 4B projected; 15y assumed*</tspan>
+<tspan x="1340" dy="23.4">Selective investigation using explicit Policy measures</tspan>
+<tspan x="1340" dy="23.4">DirectQuery source rows are not Direct Lake table rows</tspan>
 </text>
-<text x="1330" y="926" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1330" dy="0">1:* LIMITED; cross-source group</tspan>
+<path id="01b-f64-onelake-detail-regular-relationship" data-role="connector" data-start="01b-f64-onelake-detail-dimensions" data-end="01b-f64-onelake-detail-aggregate-fact" d="M568,1075 L730,1075 L730,1035 L892,1035" fill="none" stroke="#0078D4" stroke-width="2" marker-end="url(#dl-arrow)"/>
+<path id="01b-f64-onelake-detail-limited-relationship" data-role="connector" data-start="01b-f64-onelake-detail-dimensions" data-end="01b-f64-onelake-detail-policy-fact" d="M568,1165 L700,1165 L700,1265 L892,1265" fill="none" stroke="#F7630C" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#dq-arrow)"/>
+<text id="01b-f64-onelake-detail-regular-label" data-role="note" x="590" y="982" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
+<tspan x="590" dy="0">1:* REGULAR</tspan>
+<tspan x="590" dy="22.1">Same source group</tspan>
 </text>
-<text x="40" y="1147" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
-<tspan x="40" dy="0">No fact-to-fact relationship. Single-direction filters from dimensions. Policy ID / Date detail fields do not filter the monthly fact.</tspan>
-<tspan x="40" dy="22.1">No automatic aggregation routing. Excel: Summary measures for pivots; Policy measures / a separate filtered detail pivot for investigation.</tspan>
+<text id="01b-f64-onelake-detail-limited-label" data-role="note" x="590" y="1317" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
+<tspan x="590" dy="0">1:* LIMITED</tspan>
+<tspan x="590" dy="22.1">Cross-source group</tspan>
 </text>
-<rect x="40" y="1190" width="270" height="55" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="175" y="1223.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="175" dy="0">Direct Lake on OneLake</tspan>
+<text id="01b-f64-onelake-detail-inset-notes" data-role="note" x="60" y="1397" font-family="Arial, sans-serif" font-size="17" fill="black" text-anchor="start">
+<tspan x="60" dy="0">Single-direction dimension filters; no fact-to-fact relationship. Policy-only fields do not filter the monthly summary.</tspan>
+<tspan x="60" dy="22.1">No automatic DL aggregation routing. Excel: Summary pivot first; a separate, filtered Policy pivot for investigations.</tspan>
 </text>
-<rect x="330" y="1190" width="260" height="55" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="460" y="1223.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="460" dy="0">Import / Dual cache</tspan>
+<rect id="01b-f64-onelake-detail-legend-chip-0" data-role="legend-chip" x="40" y="1490" width="22" height="22" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-legend-text-0" data-role="note" x="74" y="1505" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="74" dy="0">Direct Lake</tspan>
 </text>
-<rect x="610" y="1190" width="270" height="55" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="745" y="1223.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="745" dy="0">DirectQuery (explicit)</tspan>
+<rect id="01b-f64-onelake-detail-legend-chip-1" data-role="legend-chip" x="330" y="1490" width="22" height="22" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-legend-text-1" data-role="note" x="364" y="1505" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="364" dy="0">Import / Dual</tspan>
 </text>
-<rect x="900" y="1190" width="270" height="55" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1035" y="1223.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1035" dy="0">Source / orchestration</tspan>
+<rect id="01b-f64-onelake-detail-legend-chip-2" data-role="legend-chip" x="650" y="1490" width="22" height="22" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-legend-text-2" data-role="note" x="684" y="1505" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="684" dy="0">DirectQuery</tspan>
 </text>
-<text x="1200" y="1210" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1200" dy="0">All 15 years retained: requirement TO CONFIRM.</tspan>
-<tspan x="1200" dy="20.8">Counts / cardinalities are design assumptions.</tspan>
+<rect id="01b-f64-onelake-detail-legend-chip-3" data-role="legend-chip" x="950" y="1490" width="22" height="22" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-legend-text-3" data-role="note" x="984" y="1505" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="984" dy="0">Source / processing / gates</tspan>
+</text>
+<rect id="01b-f64-onelake-detail-legend-chip-4" data-role="legend-chip" x="1390" y="1490" width="22" height="22" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="01b-f64-onelake-detail-legend-text-4" data-role="note" x="1424" y="1505" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1424" dy="0">Reported issue / guard</tspan>
+</text>
+<text id="01b-f64-onelake-detail-legend-flow" data-role="note" x="40" y="1546" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Architecture arrows: solid = publication / summary path; dashed double arrows = on-demand queries and results. Inset lines show relationships.</tspan>
+</text>
+<text id="01b-f64-onelake-detail-legend-assumptions" data-role="note" x="40" y="1576" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">* Reported / illustrative counts and 15-year coverage need confirmation. Assigned SKU and proposed memory targets are not measured here.</tspan>
 </text>
 </svg>

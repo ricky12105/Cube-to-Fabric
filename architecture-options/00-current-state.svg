@@ -1,104 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="820" viewBox="0 0 1840 820" role="img" aria-label="Option 0 - Current state: two distinct failure points">
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#495057"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1060" viewBox="0 0 1840 1060" role="img" aria-labelledby="00-current-state-title">
+<defs>
+<marker id="dl-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#0078D4"/></marker>
+<marker id="imp-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#5C2D91"/></marker>
+<marker id="dq-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#F7630C"/></marker>
+<marker id="neutral-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#495057"/></marker>
+<marker id="issue-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#D13438"/></marker>
+</defs>
 <rect width="100%" height="100%" fill="white"/>
-<text x="35" y="48" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Option 0 - Current state: two distinct failure points</tspan>
+<text id="00-current-state-title" data-role="title" x="40" y="50" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Option 0 - Current state: reported issues and Direct Lake guardrails</tspan>
 </text>
-<text x="35" y="94" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Reported pilot design, not inspected. Capacity, Direct Lake type, fallback setting, and exact row count remain unconfirmed.</tspan>
+<text id="00-current-state-subtitle" data-role="note" x="40" y="96" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Reported pilot design, not inspected. Confirm assigned SKU, Direct Lake type, fallback setting and exact row count.</tspan>
 </text>
-<text x="40" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="40" dy="0">SOURCE</tspan>
+<rect id="00-current-state-lane-0" data-role="lane-header" x="40" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="00-current-state-lane-0-label" data-role="bound-label" data-container="00-current-state-lane-0" x="190" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">SOURCE</tspan>
 </text>
-<text x="390" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="390" dy="0">LANDING / PUBLICATION</tspan>
+<rect id="00-current-state-lane-1" data-role="lane-header" x="400" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="00-current-state-lane-1-label" data-role="bound-label" data-container="00-current-state-lane-1" x="550" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">LANDING / PUBLICATION</tspan>
 </text>
-<text x="740" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="740" dy="0">STORAGE</tspan>
+<rect id="00-current-state-lane-2" data-role="lane-header" x="760" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="00-current-state-lane-2-label" data-role="bound-label" data-container="00-current-state-lane-2" x="910" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">STORAGE / CACHE</tspan>
 </text>
-<text x="1090" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1090" dy="0">SEMANTIC MODEL</tspan>
+<rect id="00-current-state-lane-3" data-role="lane-header" x="1120" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="00-current-state-lane-3-label" data-role="bound-label" data-container="00-current-state-lane-3" x="1270" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">SEMANTIC MODEL</tspan>
 </text>
-<text x="1480" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1480" dy="0">CONSUMERS</tspan>
+<rect id="00-current-state-lane-4" data-role="lane-header" x="1480" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="00-current-state-lane-4-label" data-role="bound-label" data-container="00-current-state-lane-4" x="1630" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">CONSUMERS</tspan>
 </text>
-<rect x="40" y="220" width="290" height="200" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="185" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="185" dy="0">Snowflake on AWS</tspan>
-<tspan x="185" dy="23.400000000000002">System of record</tspan>
-<tspan x="185" dy="23.400000000000002">~1.5B -&gt; ~4B detail</tspan>
-<tspan x="185" dy="23.400000000000002">15y coverage unconfirmed</tspan>
-<tspan x="185" dy="23.400000000000002">Compute: Snowflake</tspan>
+<rect id="00-current-state-source" data-role="primary" x="40" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="00-current-state-source-label" data-role="bound-label" data-container="00-current-state-source" x="190" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">Snowflake on AWS</tspan>
+<tspan x="190" dy="23.4">System of record</tspan>
+<tspan x="190" dy="23.4">~1.5B -&gt; ~4B detail*</tspan>
+<tspan x="190" dy="23.4">15y coverage unconfirmed*</tspan>
+<tspan x="190" dy="23.4">Source compute: Snowflake</tspan>
 </text>
-<rect x="390" y="220" width="290" height="200" rx="12" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
-<text x="535" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="535" dy="0">Pipeline copy - F64?</tspan>
-<tspan x="535" dy="23.400000000000002">Daily incremental</tspan>
-<tspan x="535" dy="23.400000000000002">Reported variable delay:</tspan>
-<tspan x="535" dy="23.400000000000002">minutes to hours</tspan>
-<tspan x="535" dy="23.400000000000002">~30M new rows / month</tspan>
+<rect id="00-current-state-publication" data-role="primary" x="400" y="210" width="300" height="220" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="00-current-state-publication-label" data-role="bound-label" data-container="00-current-state-publication" x="550" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">Pipeline copy - F64?*</tspan>
+<tspan x="550" dy="23.4">Daily incremental load*</tspan>
+<tspan x="550" dy="23.4">Reported variable delay:</tspan>
+<tspan x="550" dy="23.4">minutes to hours*</tspan>
+<tspan x="550" dy="23.4">~30M new rows / month*</tspan>
 </text>
-<rect x="740" y="220" width="290" height="200" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="885" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="885" dy="0">OneLake Delta fact</tspan>
-<tspan x="885" dy="23.400000000000002">~1.5B rows; 150 columns</tspan>
-<tspan x="885" dy="23.400000000000002">~105 GB compressed</tspan>
-<tspan x="885" dy="23.400000000000002">158 files reported</tspan>
-<tspan x="885" dy="23.400000000000002">15y coverage unconfirmed</tspan>
+<rect id="00-current-state-detail-storage" data-role="primary" x="760" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="00-current-state-detail-storage-label" data-role="bound-label" data-container="00-current-state-detail-storage" x="910" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">OneLake Delta fact</tspan>
+<tspan x="910" dy="23.4">~1.5B rows; 150 columns*</tspan>
+<tspan x="910" dy="23.4">~105 GB compressed*</tspan>
+<tspan x="910" dy="23.4">158 files reported*</tspan>
+<tspan x="910" dy="23.4">15y coverage unconfirmed*</tspan>
 </text>
-<rect x="1090" y="220" width="310" height="200" rx="12" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
-<text x="1245" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1245" dy="0">Direct Lake model - F64?</tspan>
-<tspan x="1245" dy="23.400000000000002">1.5B rows/table maximum</tspan>
-<tspan x="1245" dy="23.400000000000002">At ~1.5B: ~zero margin</tspan>
-<tspan x="1245" dy="23.400000000000002">At 4B: 2.5B over limit</tspan>
-<tspan x="1245" dy="23.400000000000002">DL type / fallback unknown</tspan>
+<rect id="00-current-state-detail-model" data-role="primary" x="1120" y="210" width="300" height="220" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="00-current-state-detail-model-label" data-role="bound-label" data-container="00-current-state-detail-model" x="1270" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">Direct Lake model - F64?*</tspan>
+<tspan x="1270" dy="23.4">1.5B rows/table maximum</tspan>
+<tspan x="1270" dy="23.4">At ~1.5B: ~zero margin</tspan>
+<tspan x="1270" dy="23.4">At 4B: 2.5B over limit</tspan>
+<tspan x="1270" dy="23.4">DL type / fallback unknown</tspan>
 </text>
-<rect x="1480" y="220" width="300" height="200" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1630" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<rect id="00-current-state-consumers" data-role="primary" x="1480" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="00-current-state-consumers-label" data-role="bound-label" data-container="00-current-state-consumers" x="1630" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
 <tspan x="1630" dy="0">Power BI + Excel</tspan>
-<tspan x="1630" dy="23.400000000000002">Reported row-limit error</tspan>
-<tspan x="1630" dy="23.400000000000002">Excel usage unconfirmed</tspan>
-<tspan x="1630" dy="23.400000000000002">SSAS cube replacement</tspan>
-<tspan x="1630" dy="23.400000000000002">Parity not yet tested</tspan>
+<tspan x="1630" dy="23.4">Reported row-limit error*</tspan>
+<tspan x="1630" dy="23.4">Excel usage unconfirmed*</tspan>
+<tspan x="1630" dy="23.4">SSAS cube replacement</tspan>
+<tspan x="1630" dy="23.4">Parity not yet tested</tspan>
 </text>
-<path d="M335,320 L385,320" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M685,320 L735,320" fill="none" stroke="#D13438" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1035,320 L1085,320" fill="none" stroke="#D13438" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1405,320 L1475,320" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<rect x="390" y="490" width="640" height="115" rx="12" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
-<text x="710" y="530.4" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="710" dy="0">BREAK 1: arrival / refresh reliability</tspan>
-<tspan x="710" dy="23.400000000000002">158 files is below 5,000; row groups still need checking.</tspan>
-<tspan x="710" dy="23.400000000000002">OPTIMIZE / VACUUM cannot remove a true total-row excess.</tspan>
+<path id="00-current-state-source-to-copy" data-role="connector" data-start="00-current-state-source" data-end="00-current-state-publication" d="M348,320 L392,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="00-current-state-copy-to-storage" data-role="connector" data-start="00-current-state-publication" data-end="00-current-state-detail-storage" d="M708,320 L752,320" fill="none" stroke="#D13438" stroke-width="2" marker-end="url(#issue-arrow)"/>
+<path id="00-current-state-storage-to-model" data-role="connector" data-start="00-current-state-detail-storage" data-end="00-current-state-detail-model" d="M1068,320 L1112,320" fill="none" stroke="#D13438" stroke-width="2" marker-end="url(#issue-arrow)"/>
+<path id="00-current-state-model-to-consumers" data-role="connector" data-start="00-current-state-detail-model" data-end="00-current-state-consumers" d="M1428,320 L1472,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<rect id="00-current-state-copy-risk" data-role="callout" x="40" y="510" width="840" height="170" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="00-current-state-copy-risk-label" data-role="bound-label" data-container="00-current-state-copy-risk" x="460" y="566.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="460" dy="0">VERIFY 1: reported copy / freshness delays</tspan>
+<tspan x="460" dy="23.4">Inspect extraction, orchestration, network and capacity evidence.</tspan>
+<tspan x="460" dy="23.4">The row-limit message does not diagnose a stuck copy.</tspan>
+<tspan x="460" dy="23.4">No tenant logs or current configuration were inspected.</tspan>
 </text>
-<rect x="1090" y="490" width="690" height="115" rx="12" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
-<text x="1435" y="530.4" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1435" dy="0">BREAK 2: &gt;1.5B rows on F64</tspan>
-<tspan x="1435" dy="23.400000000000002">OneLake: refresh fails / model unqueryable.</tspan>
-<tspan x="1435" dy="23.400000000000002">SQL: DirectQuery fallback only when enabled.</tspan>
+<rect id="00-current-state-row-risk" data-role="callout" x="940" y="510" width="840" height="170" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="00-current-state-row-risk-label" data-role="bound-label" data-container="00-current-state-row-risk" x="1360" y="566.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1360" dy="0">VERIFY 2: row guard and storage layout</tspan>
+<tspan x="1360" dy="23.4">If &gt;1.5B on F64: OneLake fails; SQL falls back only if enabled.</tspan>
+<tspan x="1360" dy="23.4">158 files is below 5,000; row-group count still needs checking.</tspan>
+<tspan x="1360" dy="23.4">OPTIMIZE / VACUUM cannot remove a true total-row excess.</tspan>
 </text>
-<text x="40" y="668" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="40" dy="0">FIRST TEST: capture exact error, count rows and row groups, confirm assigned SKU, Direct Lake type, and fallback configuration. No tenant access was used.</tspan>
+<text id="00-current-state-first-test" data-role="note" x="40" y="788" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">FIRST TEST: capture the exact error; count rows, files and row groups; confirm SKU, Direct Lake type and fallback.</tspan>
+<tspan x="40" dy="23.4">Keep ingestion reliability and semantic-model guardrails as separate diagnostic tracks.</tspan>
 </text>
-<rect x="40" y="735" width="270" height="55" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="175" y="768.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="175" dy="0">Direct Lake on OneLake</tspan>
+<rect id="00-current-state-legend-chip-0" data-role="legend-chip" x="40" y="920" width="22" height="22" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="00-current-state-legend-text-0" data-role="note" x="74" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="74" dy="0">Direct Lake</tspan>
 </text>
-<rect x="330" y="735" width="260" height="55" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="460" y="768.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="460" dy="0">Import / Dual cache</tspan>
+<rect id="00-current-state-legend-chip-1" data-role="legend-chip" x="330" y="920" width="22" height="22" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="00-current-state-legend-text-1" data-role="note" x="364" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="364" dy="0">Import / Dual</tspan>
 </text>
-<rect x="610" y="735" width="270" height="55" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="745" y="768.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="745" dy="0">DirectQuery (explicit)</tspan>
+<rect id="00-current-state-legend-chip-2" data-role="legend-chip" x="650" y="920" width="22" height="22" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="00-current-state-legend-text-2" data-role="note" x="684" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="684" dy="0">DirectQuery</tspan>
 </text>
-<rect x="900" y="735" width="270" height="55" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1035" y="768.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1035" dy="0">Source / orchestration</tspan>
+<rect id="00-current-state-legend-chip-3" data-role="legend-chip" x="950" y="920" width="22" height="22" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="00-current-state-legend-text-3" data-role="note" x="984" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="984" dy="0">Source / processing / gates</tspan>
 </text>
-<text x="1200" y="755" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1200" dy="0">All 15 years retained: requirement TO CONFIRM.</tspan>
-<tspan x="1200" dy="20.8">Counts / cardinalities are design assumptions.</tspan>
+<rect id="00-current-state-legend-chip-4" data-role="legend-chip" x="1390" y="920" width="22" height="22" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="00-current-state-legend-text-4" data-role="note" x="1424" y="935" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1424" dy="0">Reported issue / guard</tspan>
+</text>
+<text id="00-current-state-legend-flow" data-role="note" x="40" y="976" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Architecture arrows: solid = publication / summary path; dashed double arrows = on-demand queries and results. Inset lines show relationships.</tspan>
+</text>
+<text id="00-current-state-legend-assumptions" data-role="note" x="40" y="1006" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">* Reported / illustrative counts and 15-year coverage need confirmation. Assigned SKU and proposed memory targets are not measured here.</tspan>
 </text>
 </svg>

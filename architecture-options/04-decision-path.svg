@@ -1,103 +1,167 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="910" viewBox="0 0 1840 910" role="img" aria-label="Decision path - change the model first; scale is a gated fallback">
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#495057"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1100" viewBox="0 0 1840 1100" role="img" aria-labelledby="04-decision-path-title">
+<defs>
+<marker id="dl-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#0078D4"/></marker>
+<marker id="imp-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#5C2D91"/></marker>
+<marker id="dq-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#F7630C"/></marker>
+<marker id="neutral-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#495057"/></marker>
+<marker id="issue-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#D13438"/></marker>
+</defs>
 <rect width="100%" height="100%" fill="white"/>
-<text x="35" y="48" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Decision path - change the model first; scale is a gated fallback</tspan>
+<text id="04-decision-path-title" data-role="title" x="40" y="50" font-family="Arial, sans-serif" font-size="30" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Decision path - change the model first; scale is a gated fallback</tspan>
 </text>
-<text x="35" y="94" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="35" dy="0">Objective: all 15 years fast at summary grain; exceptional policy-level access on demand; no automatic history truncation.</tspan>
+<text id="04-decision-path-subtitle" data-role="note" x="40" y="96" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Decision stages, not data-flow lanes: test Option 1, then Option 2, and consider scale only after both fail.</tspan>
 </text>
-<text x="40" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="40" dy="0">SOURCE</tspan>
+<rect id="04-decision-path-lane-0" data-role="lane-header" x="40" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="04-decision-path-lane-0-label" data-role="bound-label" data-container="04-decision-path-lane-0" x="190" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">REQUIREMENT</tspan>
 </text>
-<text x="390" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="390" dy="0">LANDING / PUBLICATION</tspan>
+<rect id="04-decision-path-lane-1" data-role="lane-header" x="400" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="04-decision-path-lane-1-label" data-role="bound-label" data-container="04-decision-path-lane-1" x="550" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">TRY OPTION 1 - F64</tspan>
 </text>
-<text x="740" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="740" dy="0">STORAGE</tspan>
+<rect id="04-decision-path-lane-2" data-role="lane-header" x="760" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="04-decision-path-lane-2-label" data-role="bound-label" data-container="04-decision-path-lane-2" x="910" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">TRY OPTION 2 - F64</tspan>
 </text>
-<text x="1090" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1090" dy="0">SEMANTIC MODEL</tspan>
+<rect id="04-decision-path-lane-3" data-role="lane-header" x="1120" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="04-decision-path-lane-3-label" data-role="bound-label" data-container="04-decision-path-lane-3" x="1270" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">CAPACITY GATE</tspan>
 </text>
-<text x="1480" y="142" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1480" dy="0">CONSUMERS</tspan>
+<rect id="04-decision-path-lane-4" data-role="lane-header" x="1480" y="135" width="300" height="52" rx="10" fill="transparent" stroke="#CBD5E1" stroke-width="2"/>
+<text id="04-decision-path-lane-4-label" data-role="bound-label" data-container="04-decision-path-lane-4" x="1630" y="167.3" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">OPTION 3 - LAST RESORT</tspan>
 </text>
-<rect x="45" y="205" width="420" height="160" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="255" y="256.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="255" dy="0">Can the model change meet</tspan>
-<tspan x="255" dy="23.400000000000002">the requirement on F64?</tspan>
-<tspan x="255" dy="23.400000000000002">Confirm grain, Excel usage,</tspan>
-<tspan x="255" dy="23.400000000000002">15y retention, and SLAs</tspan>
+<rect id="04-decision-path-requirement" data-role="primary" x="40" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="04-decision-path-requirement-label" data-role="bound-label" data-container="04-decision-path-requirement" x="190" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="190" dy="0">Can the model change meet</tspan>
+<tspan x="190" dy="23.4">the requirement on F64?</tspan>
+<tspan x="190" dy="23.4">Confirm grain, Excel usage,</tspan>
+<tspan x="190" dy="23.4">all 15y and performance</tspan>
+<tspan x="190" dy="23.4">before choosing a capacity</tspan>
 </text>
-<rect x="560" y="205" width="440" height="160" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="780" y="256.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="780" dy="0">1. Direct Lake summary + DQ detail</tspan>
-<tspan x="780" dy="23.400000000000002">Lead: 1a Snowflake detail</tspan>
-<tspan x="780" dy="23.400000000000002">1b only if a second copy is justified</tspan>
-<tspan x="780" dy="23.400000000000002">F64; explicit policy measures</tspan>
+<rect id="04-decision-path-option-one" data-role="primary" x="400" y="210" width="300" height="220" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="04-decision-path-option-one-label" data-role="bound-label" data-container="04-decision-path-option-one" x="550" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">1. Direct Lake summary</tspan>
+<tspan x="550" dy="23.4">+ DirectQuery policy detail</tspan>
+<tspan x="550" dy="23.4">Lead: 1a Snowflake detail</tspan>
+<tspan x="550" dy="23.4">1b only if copy justified</tspan>
+<tspan x="550" dy="23.4">F64; explicit measures</tspan>
 </text>
-<rect x="1100" y="205" width="320" height="160" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="1260" y="256.2" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1260" dy="0">PASS -&gt; stay on F64</tspan>
-<tspan x="1260" dy="23.400000000000002">Monthly example: 36M</tspan>
-<tspan x="1260" dy="23.400000000000002">1.464B row headroom</tspan>
-<tspan x="1260" dy="23.400000000000002">Measure memory + CU load</tspan>
+<rect id="04-decision-path-option-two" data-role="primary" x="760" y="210" width="300" height="220" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="04-decision-path-option-two-label" data-role="bound-label" data-container="04-decision-path-option-two" x="910" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">2. Import aggregates</tspan>
+<tspan x="910" dy="23.4">+ DirectQuery policy detail</tspan>
+<tspan x="910" dy="23.4">Same-source Dual dimensions</tspan>
+<tspan x="910" dy="23.4">Automatic hit / miss routing</tspan>
+<tspan x="910" dy="23.4">F64; refresh / security gate</tspan>
 </text>
-<path d="M470,285 L555,285" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<path d="M1005,285 L1095,285" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<rect x="560" y="460" width="440" height="155" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="780" y="508.7" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="780" dy="0">2. If 1 fails required UX / tests:</tspan>
-<tspan x="780" dy="23.400000000000002">Import aggregates + DQ detail</tspan>
-<tspan x="780" dy="23.400000000000002">Automatic cache hit / miss routing</tspan>
-<tspan x="780" dy="23.400000000000002">F64; memory + refresh gate</tspan>
+<rect id="04-decision-path-capacity-gate" data-role="primary" x="1120" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="04-decision-path-capacity-gate-label" data-role="bound-label" data-container="04-decision-path-capacity-gate" x="1270" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">Have BOTH F64 options</tspan>
+<tspan x="1270" dy="23.4">failed agreed tests after</tspan>
+<tspan x="1270" dy="23.4">tuning, and can capacity</tspan>
+<tspan x="1270" dy="23.4">fix the failing requirement?</tspan>
+<tspan x="1270" dy="23.4">No -&gt; fix the root cause</tspan>
 </text>
-<path d="M780,370 L780,455" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<text x="790" y="337" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
-<tspan x="790" dy="0">Fail / refine</tspan>
+<rect id="04-decision-path-option-three" data-role="primary" x="1480" y="210" width="300" height="220" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="04-decision-path-option-three-label" data-role="bound-label" data-container="04-decision-path-option-three" x="1630" y="279.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">3. LAST RESORT</tspan>
+<tspan x="1630" dy="23.4">Benchmark F256 for 4B</tspan>
+<tspan x="1630" dy="23.4">F128 only up to 3B</tspan>
+<tspan x="1630" dy="23.4">Approval still required</tspan>
+<tspan x="1630" dy="23.4">Does not redesign the model</tspan>
 </text>
-<rect x="1100" y="460" width="320" height="155" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="1260" y="508.7" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1260" dy="0">PASS -&gt; stay on F64</tspan>
-<tspan x="1260" dy="23.400000000000002">Verify Excel aggregation hits</tspan>
-<tspan x="1260" dy="23.400000000000002">Retain all 15y</tspan>
-<tspan x="1260" dy="23.400000000000002">No second detail copy in 2a</tspan>
+<path id="04-decision-path-start-option-one" data-role="connector" data-start="04-decision-path-requirement" data-end="04-decision-path-option-one" d="M348,320 L392,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="04-decision-path-one-fails" data-role="connector" data-start="04-decision-path-option-one" data-end="04-decision-path-option-two" d="M708,320 L752,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="04-decision-path-two-fails" data-role="connector" data-start="04-decision-path-option-two" data-end="04-decision-path-capacity-gate" d="M1068,320 L1112,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="04-decision-path-gate-yes" data-role="connector" data-start="04-decision-path-capacity-gate" data-end="04-decision-path-option-three" d="M1428,320 L1472,320" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<text id="04-decision-path-one-fail-label" data-role="note" x="711" y="295" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
+<tspan x="711" dy="0">FAIL</tspan>
 </text>
-<path d="M1005,535 L1095,535" fill="none" stroke="#495057" stroke-width="2"  marker-end="url(#arrow)"/>
-<rect x="1490" y="460" width="305" height="155" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1642.5" y="508.7" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1642.5" dy="0">3. ONLY IF BOTH FAIL</tspan>
-<tspan x="1642.5" dy="23.400000000000002">Muted fallback: F256 for 4B</tspan>
-<tspan x="1642.5" dy="23.400000000000002">F128 only up to 3B</tspan>
-<tspan x="1642.5" dy="23.400000000000002">Does not redesign the model</tspan>
+<text id="04-decision-path-two-fail-label" data-role="note" x="1071" y="295" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
+<tspan x="1071" dy="0">FAIL</tspan>
 </text>
-<path d="M1005,620 L1480,690" fill="none" stroke="#495057" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
-<text x="1015" y="587" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
-<tspan x="1015" dy="0">Both fail agreed tests; failure addressed by capacity?</tspan>
+<text id="04-decision-path-gate-yes-label" data-role="note" x="1432" y="295" font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="start">
+<tspan x="1432" dy="0">YES</tspan>
 </text>
-<path d="M1630,685 L1630,620" fill="none" stroke="#495057" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
-<text x="40" y="743" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
-<tspan x="40" dy="0">Do not interpret cross-cloud latency, a stuck copy, incorrect security, or unsupported Excel MDX as evidence that a bigger SKU fixes the problem.</tspan>
-<tspan x="40" dy="23.400000000000002">Proposed one-week acceptance thresholds and public regional list prices are in the evidence appendix; none are measured customer outcomes.</tspan>
+<rect id="04-decision-path-one-passes" data-role="node" x="400" y="610" width="300" height="190" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="04-decision-path-one-passes-label" data-role="bound-label" data-container="04-decision-path-one-passes" x="550" y="664.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="550" dy="0">PASS -&gt; stay on F64</tspan>
+<tspan x="550" dy="23.4">All 15y summary + detail*</tspan>
+<tspan x="550" dy="23.4">36M monthly example*</tspan>
+<tspan x="550" dy="23.4">1.464B row headroom*</tspan>
+<tspan x="550" dy="23.4">Memory + Excel tests pass</tspan>
 </text>
-<rect x="40" y="825" width="270" height="55" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
-<text x="175" y="858.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="175" dy="0">Direct Lake on OneLake</tspan>
+<rect id="04-decision-path-two-passes" data-role="node" x="760" y="610" width="300" height="190" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="04-decision-path-two-passes-label" data-role="bound-label" data-container="04-decision-path-two-passes" x="910" y="664.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="910" dy="0">PASS -&gt; stay on F64</tspan>
+<tspan x="910" dy="23.4">All 15y summary + detail*</tspan>
+<tspan x="910" dy="23.4">Verify Excel aggregate hits</tspan>
+<tspan x="910" dy="23.4">Memory + refresh fit</tspan>
+<tspan x="910" dy="23.4">Snowflake: one detail estate</tspan>
 </text>
-<rect x="330" y="825" width="260" height="55" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
-<text x="460" y="858.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="460" dy="0">Import / Dual cache</tspan>
+<rect id="04-decision-path-gate-no" data-role="node" x="1120" y="610" width="300" height="190" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="04-decision-path-gate-no-label" data-role="bound-label" data-container="04-decision-path-gate-no" x="1270" y="664.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1270" dy="0">NO -&gt; do not scale</tspan>
+<tspan x="1270" dy="23.4">Resolve source / network /</tspan>
+<tspan x="1270" dy="23.4">copy / security / MDX issue</tspan>
+<tspan x="1270" dy="23.4">Revise or retest the design</tspan>
+<tspan x="1270" dy="23.4">A bigger SKU is not a cure</tspan>
 </text>
-<rect x="610" y="825" width="270" height="55" rx="12" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
-<text x="745" y="858.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="745" dy="0">DirectQuery (explicit)</tspan>
+<rect id="04-decision-path-benchmark" data-role="node" x="1480" y="610" width="300" height="190" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="04-decision-path-benchmark-label" data-role="bound-label" data-container="04-decision-path-benchmark" x="1630" y="664.5" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
+<tspan x="1630" dy="0">Approved benchmark only</tspan>
+<tspan x="1630" dy="23.4">Validate 100 GB upper bound</tspan>
+<tspan x="1630" dy="23.4">and actual working set</tspan>
+<tspan x="1630" dy="23.4">Check throughput + cost</tspan>
+<tspan x="1630" dy="23.4">Keep modelling work in scope</tspan>
 </text>
-<rect x="900" y="825" width="270" height="55" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
-<text x="1035" y="858.8" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="middle">
-<tspan x="1035" dy="0">Source / orchestration</tspan>
+<path id="04-decision-path-one-pass" data-role="connector" data-start="04-decision-path-option-one" data-end="04-decision-path-one-passes" d="M550,438 L550,602" fill="none" stroke="#0078D4" stroke-width="2" marker-end="url(#dl-arrow)"/>
+<path id="04-decision-path-two-pass" data-role="connector" data-start="04-decision-path-option-two" data-end="04-decision-path-two-passes" d="M910,438 L910,602" fill="none" stroke="#5C2D91" stroke-width="2" marker-end="url(#imp-arrow)"/>
+<path id="04-decision-path-gate-no-path" data-role="connector" data-start="04-decision-path-capacity-gate" data-end="04-decision-path-gate-no" d="M1270,438 L1270,602" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<path id="04-decision-path-benchmark-path" data-role="connector" data-start="04-decision-path-option-three" data-end="04-decision-path-benchmark" d="M1630,438 L1630,602" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#neutral-arrow)"/>
+<text id="04-decision-path-one-pass-label" data-role="note" x="570" y="526" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="570" dy="0">PASS</tspan>
 </text>
-<text x="1200" y="845" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
-<tspan x="1200" dy="0">All 15 years retained: requirement TO CONFIRM.</tspan>
-<tspan x="1200" dy="20.8">Counts / cardinalities are design assumptions.</tspan>
+<text id="04-decision-path-two-pass-label" data-role="note" x="930" y="526" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="930" dy="0">PASS</tspan>
+</text>
+<text id="04-decision-path-gate-no-caption" data-role="note" x="1290" y="526" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1290" dy="0">NO</tspan>
+</text>
+<text id="04-decision-path-benchmark-caption" data-role="note" x="1650" y="526" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1650" dy="0">TEST</tspan>
+</text>
+<text id="04-decision-path-decision-notes" data-role="note" x="40" y="868" font-family="Arial, sans-serif" font-size="18" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Do not interpret cross-cloud latency, a stuck copy, incorrect security or unsupported Excel MDX as evidence that scaling fixes the problem.</tspan>
+<tspan x="40" dy="23.4">Use the same agreed query corpus, retention rules and acceptance criteria for both F64 patterns; no measured customer outcome is implied.</tspan>
+</text>
+<rect id="04-decision-path-legend-chip-0" data-role="legend-chip" x="40" y="960" width="22" height="22" rx="10" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text id="04-decision-path-legend-text-0" data-role="note" x="74" y="975" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="74" dy="0">Direct Lake</tspan>
+</text>
+<rect id="04-decision-path-legend-chip-1" data-role="legend-chip" x="330" y="960" width="22" height="22" rx="10" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text id="04-decision-path-legend-text-1" data-role="note" x="364" y="975" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="364" dy="0">Import / Dual</tspan>
+</text>
+<rect id="04-decision-path-legend-chip-2" data-role="legend-chip" x="650" y="960" width="22" height="22" rx="10" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+<text id="04-decision-path-legend-text-2" data-role="note" x="684" y="975" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="684" dy="0">DirectQuery</tspan>
+</text>
+<rect id="04-decision-path-legend-chip-3" data-role="legend-chip" x="950" y="960" width="22" height="22" rx="10" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text id="04-decision-path-legend-text-3" data-role="note" x="984" y="975" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="984" dy="0">Source / processing / gates</tspan>
+</text>
+<rect id="04-decision-path-legend-chip-4" data-role="legend-chip" x="1390" y="960" width="22" height="22" rx="10" fill="#FDE7E9" stroke="#D13438" stroke-width="2"/>
+<text id="04-decision-path-legend-text-4" data-role="note" x="1424" y="975" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="1424" dy="0">Reported issue / guard</tspan>
+</text>
+<text id="04-decision-path-legend-flow" data-role="note" x="40" y="1016" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">Decision arrows: PASS stops on F64; FAIL advances to the next test. Scale only when both F64 patterns fail for a capacity-solvable reason.</tspan>
+</text>
+<text id="04-decision-path-legend-assumptions" data-role="note" x="40" y="1046" font-family="Arial, sans-serif" font-size="16" fill="black" text-anchor="start">
+<tspan x="40" dy="0">* Reported / illustrative counts and 15-year coverage need confirmation. Assigned SKU and proposed memory targets are not measured here.</tspan>
 </text>
 </svg>
