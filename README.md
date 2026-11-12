@@ -58,6 +58,25 @@ F128 does not cover a 4-billion-row Direct Lake table.
   saved artifacts. Keep affected versions consistent when revising the pack;
   no regeneration scripts are included.
 
+## GitHub Pages
+
+The [site entry point](index.html) redirects to the diagram gallery. The
+[`.nojekyll` marker](.nojekyll) allows GitHub Pages to serve the files as a
+static site without Jekyll processing.
+
+**Publication is pending.** The repository remains private, and GitHub rejected
+Pages for this repository under the current plan. Publishing requires either
+an eligible plan for private-repository Pages or explicit approval to make the
+repository public. No repository visibility change has been made.
+
+Once eligible, configure **Settings > Pages > Deploy from a branch**, selecting
+**main** and **/ (root)**. Subsequent pushes to `main` publish site updates.
+The expected address after a successful deployment is
+<https://ricky12105.github.io/Cube-to-Fabric/>.
+
+Do not treat a private source repository as a guarantee of private website
+access; confirm the Pages site's access settings before publishing.
+
 ## Evidence, assumptions and scope
 
 - Product evidence and public pricing were checked on **12 November 2026**.
